@@ -1,0 +1,3 @@
+#!/bin/bash
+
+./gconf/sync-gnome-terminal-profile.sh
