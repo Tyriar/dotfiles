@@ -1,4 +1,7 @@
 #!/bin/bash
 
+cp -f .gitconfig ~/.gitconfig
+cp -f .vimrc ~/.vimrc
+
 ./sync-helpers/gnome-terminal-profile.sh
 ./sync-helpers/sublime-preferences.sh
