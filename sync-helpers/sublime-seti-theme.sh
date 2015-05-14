@@ -2,7 +2,7 @@ DIR=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
 GIT_DIR=$DIR/../build/Seti_ST3
 SUBLIME_DIR=~/.config/sublime-text-3/Packages
 
-echo -e "\033[0;32m~~~Syncing Sublime Text 3 Seti_UI theme~~~\033[0m"
+echo -e "\033[0;33m~~~Syncing Sublime Text 3 Seti_UI theme~~~\033[0m"
 
 mkdir -p $GIT_DIR
 if [ ! -d "$GIT_DIR/.git" ]; then
