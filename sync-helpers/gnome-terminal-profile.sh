@@ -1,3 +1,5 @@
+echo -e "\033[0;32m~~~Syncing gnome-terminal profile~~~\033[0m"
+
 gconftool-2 --set "/apps/gnome-terminal/profiles/Default/bold_color_same_as_fg" \
     --type bool "true"
 gconftool-2 --set "/apps/gnome-terminal/profiles/Default/use_theme_colors" \
