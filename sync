@@ -1,7 +1,8 @@
 #!/bin/bash
 
-cp -f .gitconfig ~/.gitconfig
-cp -f .vimrc ~/.vimrc
+cp -f .gitconfig ~
+cp -f .vimrc ~
+cp -f .bash_profile ~
 
 ./sync-helpers/gnome-terminal-profile.sh
 ./sync-helpers/sublime-seti-theme.sh
