@@ -1,3 +1,4 @@
 #!/bin/bash
 
 ./sync-helpers/gnome-terminal-profile.sh
+./sync-helpers/sublime-preferences.sh
