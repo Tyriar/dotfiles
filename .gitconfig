@@ -1,0 +1,37 @@
+[color]
+  ui = auto
+  diff = auto
+  status = auto
+  branch = auto
+[color "branch"]
+  current = yellow black bold
+  local = yellow
+  remote = magenta
+[color "diff"]
+  meta = yellow black bold
+  frag = magenta
+  old = red
+  new = green
+  whitespace = white
+[color "status"]
+  added = green bold
+  changed = red bold
+  untracked = cyan
+  branch = yellow black bold
+[alias]
+  authors = shortlog -s -n .
+  co = checkout
+  # Show files in commit, defaults to HEAD
+  sf = show --pretty="format:" --name-status
+  st = status
+  up = branch -u
+  upo = branch -u origin/master
+[user]
+	email = tyriar@tyriar.com
+	name = Daniel Imms
+[push]
+	default = simple
+[credential]
+	helper = cache --timeout=7200
+[core]
+	editor = vim
