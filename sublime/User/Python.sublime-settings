@@ -1,0 +1,12 @@
+{
+  "extensions":
+  [
+    // Chromium
+    "cfg",
+    "gyp",
+    "gypi",
+    "gn",
+    "gni",
+  ],
+  "tab_size": 2,
+}
