@@ -30,10 +30,10 @@
 [alias]
   authors = shortlog -s -n .
   co = checkout
-  # Show files in commit, defaults to HEAD
+  l = log --pretty='format:%C(yellow)%h %C(blue)%ad %C(reset)%s%C(red)%d %C(green)%an%C(reset), %C(cyan)%ar' --date=short
+  sb = "!git status && git branch"
   sf = show --pretty="format:" --name-status
   st = status
   up = branch -u
   upo = branch -u origin/master
-  l = log --pretty='format:%C(yellow)%h %C(blue)%ad %C(reset)%s%C(red)%d %C(green)%an%C(reset), %C(cyan)%ar' --date=short
   
