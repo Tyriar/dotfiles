@@ -22,7 +22,7 @@
   email = tyriar@tyriar.com
   name = Daniel Imms
 [push]
-  default = simple
+  default = upstream
 [credential]
   helper = cache --timeout=7200
 [core]
@@ -36,4 +36,4 @@
   st = status
   up = branch -u
   upo = branch -u origin/master
-  
+
