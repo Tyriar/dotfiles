@@ -1,9 +1,11 @@
 #!/bin/bash
 
-cp -f .gitconfig ~
-cp -f .vimrc ~
-cp -f .bash_profile ~
+DIR=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
 
-./sync-helpers/gnome-terminal-profile.sh
-./sync-helpers/sublime-seti-theme.sh
-./sync-helpers/sublime-preferences.sh
+cp -f $DIR/.gitconfig ~
+cp -f $DIR/.vimrc ~
+cp -f $DIR/.bash_profile ~
+
+$DIR/sync-helpers/gnome-terminal-profile.sh
+$DIR/sync-helpers/sublime-seti-theme.sh
+$DIR/sync-helpers/sublime-preferences.sh
