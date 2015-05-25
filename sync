@@ -2,9 +2,10 @@
 
 DIR=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
 
+cp -f $DIR/.bash_aliases ~
+cp -f $DIR/.bash_profile ~
 cp -f $DIR/.gitconfig ~
 cp -f $DIR/.vimrc ~
-cp -f $DIR/.bash_profile ~
 
 $DIR/sync-helpers/gnome-terminal-profile.sh
 $DIR/sync-helpers/sublime-seti-theme.sh
