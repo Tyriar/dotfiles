@@ -1,12 +1,21 @@
-#!/bin/bash
-
 DIR=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
+
+echo -e "\e[33m~~~Copying dotfiles~~~\e[0m"
 
 cp -f $DIR/.bash_aliases ~
 cp -f $DIR/.bash_profile ~
+cp -f $DIR/.bashrc ~
 cp -f $DIR/.gitconfig ~
 cp -f $DIR/.vimrc ~
 
 $DIR/sync-helpers/gnome-terminal-profile.sh
 $DIR/sync-helpers/sublime-seti-theme.sh
 $DIR/sync-helpers/sublime-preferences.sh
+
+if [ -n "$SSH_CLIENT" ] || [ -n "$SSH_TTY" ]; then
+  echo -e "\e[33m~~~Sourcing ~/.bash_profile~~~\e[0m"
+  . ~/.bash_profile
+else
+  echo -e "\e[33m~~~Sourcing ~/.bashrc~~~\e[0m"
+  . ~/.bashrc
+fi
