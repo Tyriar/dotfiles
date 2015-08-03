@@ -9,7 +9,6 @@ cp -f $DIR/.gitconfig ~
 cp -f $DIR/.vimrc ~
 
 $DIR/sync-helpers/gnome-terminal-profile.sh
-$DIR/sync-helpers/sublime-seti-theme.sh
 $DIR/sync-helpers/sublime-preferences.sh
 
 if [ -n "$SSH_CLIENT" ] || [ -n "$SSH_TTY" ]; then
