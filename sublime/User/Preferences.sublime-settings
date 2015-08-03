@@ -46,6 +46,9 @@
   // Install via https://packagecontrol.io/packages/Seti_UI
   "theme": "Seti_orig.sublime-theme",
   "color_scheme": "Packages/Seti_UI/Scheme/Seti.tmTheme",
-  "Seti_sb_tree_small": true, // sidebar tree padding = 10px
-  "Seti_sb_small_padding": true, // sidebar horizontal padding = 3px
+  "Seti_sb_small_padding": true,
+  "Seti_sb_tree_small": true,
+  "Seti_SB_med": true,
+  "Seti_tabs_small": true,
+  "Seti_blue_tab_label": true,
 }
