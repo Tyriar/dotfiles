@@ -1,0 +1,47 @@
+"*":
+  "exception-reporting":
+    userId: "f3cfa406-9a70-3680-f858-0c412c97f37e"
+  welcome:
+    showOnStartup: false
+  metrics:
+    userId: "a22f0efc-41ce-ed43-e5c0-88884b9fac7c"
+  editor:
+    invisibles: {}
+  core:
+    useReactEditor: true
+    ignoredNames: [
+      ".git"
+      ".hg"
+      ".svn"
+      ".DS_Store"
+      "Thumbs.db"
+      ".pyc"
+    ]
+    disabledPackages: [
+      "wrap-guide"
+    ]
+  whitespace:
+    ensureSingleTrailingNewline: false
+  "multi-wrap-guide":
+    columns: [
+      80
+      100
+    ]
+    locked: true
+".java.source":
+  "multi-wrap-guide":
+    columns: [
+      100
+    ]
+  editor:
+    preferredLineLength: 100
+    tabLength: 4
+'.shell.source':
+  editor:
+    tabLength: 4
+'.python.source':
+  editor:
+    tabLength: 2
+'.js.source':
+  editor:
+    tabLength: 2
