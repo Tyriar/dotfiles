@@ -1,0 +1,10 @@
+'.platform-win32, .platform-linux':
+  'alt-\\': 'unset!' # 'tree-view:toggle-focus'
+  'ctrl-|': 'unset!'
+  'ctrl-0': 'tree-view:reveal-active-file'
+
+'atom-workspace atom-text-editor:not([mini])':
+  'ctrl-up': 'unset!'
+  'ctrl-shift-up': 'editor:move-line-up'
+  'ctrl-down': 'unset!'
+  'ctrl-shift-down': 'editor:move-line-down'
