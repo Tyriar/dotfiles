@@ -7,6 +7,10 @@
     userId: "a22f0efc-41ce-ed43-e5c0-88884b9fac7c"
   editor:
     invisibles: {}
+    fontSize: 12
+    fontFamily: "Hack"
+    scrollPastEnd: true
+    showIndentGuide: true
   core:
     useReactEditor: true
     ignoredNames: [
