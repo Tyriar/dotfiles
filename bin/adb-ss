@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+if [ $# -eq 0 ] ; then
+  adb shell screencap -p | perl -pe 's/\x0D\x0A/\x0A/g' > ~/screen`date +"%Y-%m-%d_%H-%M-%S"`.png
+else
+  adb shell screencap -p | perl -pe 's/\x0D\x0A/\x0A/g' > ~/$1.png
+fi
