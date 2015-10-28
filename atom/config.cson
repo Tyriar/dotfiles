@@ -30,13 +30,10 @@
     columns: [
       80
       100
+      120
     ]
     locked: true
 ".java.source":
-  "multi-wrap-guide":
-    columns: [
-      100
-    ]
   editor:
     preferredLineLength: 100
     tabLength: 4
