@@ -1,14 +1,20 @@
 '.platform-win32, .platform-linux':
-  'alt-\\': 'unset!' # 'tree-view:toggle-focus'
-  'ctrl-|': 'unset!'
+  'alt-\\': 'unset!' # tree-view:toggle-focus default
+  'ctrl-|': 'unset!' # tree-view:reveal-active-file default
   'ctrl-0': 'tree-view:reveal-active-file'
 
 'atom-workspace atom-text-editor:not([mini])':
-  'ctrl-up': 'unset!'
+  'ctrl-up': 'unset!' # editor:move-line-up default
   'ctrl-shift-up': 'editor:move-line-up'
-  'ctrl-down': 'unset!'
+  'ctrl-down': 'unset!' # editor:move-line-down default
   'ctrl-shift-down': 'editor:move-line-down'
 
 'atom-text-editor:not([mini])':
-  'f5': 'unset!'
+  'f5': 'unset!' # sort-lines:sort default
   'f9': 'sort-lines:sort'
+
+'atom-workspace':
+  'alt-]': 'unset!' # tab-switcher:next default
+  'ctrl-tab': 'tab-switcher:next'
+  'alt-[': 'unset!' # tab-switcher:previous default
+  'ctrl-shift-tab': 'tab-switcher:previous'
