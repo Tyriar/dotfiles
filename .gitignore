@@ -2,8 +2,11 @@ build/
 
 atom.symlink/.apm
 atom.symlink/.node-gyp
+atom.symlink/.npm
 atom.symlink/.storage
 atom.symlink/compile-cache/
+atom.symlink/dev
+atom.symlink/electron
 atom.symlink/nohup.out
 atom.symlink/packages
 atom.symlink/projects.cson
