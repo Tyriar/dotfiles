@@ -25,7 +25,7 @@
       "wrap-guide"
     ]
   whitespace:
-    ensureSingleTrailingNewline: false
+    ignoreWhitespaceOnCurrentLine: false
   "multi-wrap-guide":
     columns: [
       80
