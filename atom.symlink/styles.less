@@ -1,3 +1,4 @@
+// multi-wrap-guide custom line styles
 atom-text-editor::shadow {
   .multi-wrap-guide:nth-child(1) .multi-wrap-guide-line {
     width: 1px;
@@ -8,4 +9,23 @@ atom-text-editor::shadow {
   .multi-wrap-guide:nth-child(3) .multi-wrap-guide-line {
     width: 3px;
   }
+}
+
+// tree-view style squashed directories
+.squashed-dir {
+  color: #777;
+}
+
+// tree-view override tree-view file spacing
+.list-item.file {
+  height: 20px !important;
+  line-height: 20px !important;
+}
+.list-item.file.selected::before {
+  height: 20px !important;
+}
+
+// minimap-find-and-replace override highlight color
+.minimap .search-result {
+  background: #FFF;
 }
