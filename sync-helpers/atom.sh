@@ -2,7 +2,7 @@ echo -e "\e[33m~~~Syncing atom~~~\e[0m"
 
 if [[ ! -L ~/.atom ]]; then
     echo -e "\e[33mCreating symlink\e[0m"
-    ln -s "$(pwd)/atom.symlink" ~/.atom
+    ln -s $(pwd)/atom.symlink ~/.atom
 fi
 
 declare -a PACKAGES=(
@@ -13,6 +13,7 @@ declare -a PACKAGES=(
     "navigation-history"
     "project-manager"
     "sort-lines"
+    "switch-header-source"
     "tab-switcher"
 )
 
