@@ -6,7 +6,6 @@
   metrics:
     userId: "a22f0efc-41ce-ed43-e5c0-88884b9fac7c"
   editor:
-    invisibles: {}
     fontSize: 12
     fontFamily: "Hack"
     scrollPastEnd: true
@@ -33,12 +32,10 @@
       120
     ]
     locked: true
-  linter: {}
   minimap:
     plugins:
       "find-and-replace": true
     charHeight: 3
-  "tab-switcher": {}
 ".js.source":
   editor:
     tabLength: 2
