@@ -21,6 +21,6 @@ do
     if [ ! -d ~/.atom/packages/$i ]; then
         apm install $i
     else
-        echo "Skipping ~/.atom/packages/$i, already installed"
+        echo -e "\e[37m$i already installed\e[0m"
     fi
 done
