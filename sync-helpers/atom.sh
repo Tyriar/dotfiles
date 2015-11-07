@@ -11,6 +11,7 @@ declare -a PACKAGES=(
     "minimap-find-and-replace"
     "multi-wrap-guide"
     "navigation-history"
+    "project-finder"
     "project-manager"
     "sort-lines"
     "switch-header-source"

@@ -10,6 +10,7 @@
     fontFamily: "Hack"
     scrollPastEnd: true
     showIndentGuide: true
+    invisibles: {}
   core:
     useReactEditor: true
     ignoredNames: [
@@ -36,16 +37,17 @@
     plugins:
       "find-and-replace": true
     charHeight: 3
-".js.source":
-  editor:
-    tabLength: 2
-".python.source":
-  editor:
-    tabLength: 2
-".shell.source":
-  editor:
-    tabLength: 4
+  "project-finder": {}
 ".java.source":
   editor:
     preferredLineLength: 100
     tabLength: 4
+".shell.source":
+  editor:
+    tabLength: 4
+".python.source":
+  editor:
+    tabLength: 2
+".js.source":
+  editor:
+    tabLength: 2
