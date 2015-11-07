@@ -1,1 +1,11 @@
 build/
+
+atom.symlink/.apm
+atom.symlink/.node-gyp
+atom.symlink/.storage
+atom.symlink/compile-cache/
+atom.symlink/nohup.out
+atom.symlink/packages
+atom.symlink/projects.cson
+atom.symlink/storage
+atom.symlink/themes

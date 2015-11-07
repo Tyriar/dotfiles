@@ -33,16 +33,22 @@
       120
     ]
     locked: true
+  linter: {}
+  minimap:
+    plugins:
+      "find-and-replace": true
+    charHeight: 3
+  "tab-switcher": {}
+".js.source":
+  editor:
+    tabLength: 2
+".python.source":
+  editor:
+    tabLength: 2
+".shell.source":
+  editor:
+    tabLength: 4
 ".java.source":
   editor:
     preferredLineLength: 100
     tabLength: 4
-'.shell.source':
-  editor:
-    tabLength: 4
-'.python.source':
-  editor:
-    tabLength: 2
-'.js.source':
-  editor:
-    tabLength: 2

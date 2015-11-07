@@ -8,7 +8,7 @@ cp -f $DIR/.bashrc ~
 cp -f $DIR/.gitconfig ~
 cp -f $DIR/.vimrc ~
 
-$DIR/sync-helpers/atom-preferences.sh
+$DIR/sync-helpers/atom.sh
 $DIR/sync-helpers/gnome-terminal-profile.sh
 $DIR/sync-helpers/sublime-preferences.sh
 
