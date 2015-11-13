@@ -1,4 +1,4 @@
-# tyr-tools
+# Tyriar's dotfiles
 
 My dot files and development tools for Ubuntu
 
