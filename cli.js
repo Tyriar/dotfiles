@@ -8,6 +8,7 @@ var process = require('process');
 var allPrograms = [
   'atom',
   'bash',
+  'bin',
   'git',
   'gnome-terminal',
   'vim'

@@ -16,10 +16,9 @@ if [ -n "$BASH_VERSION" ]; then
     fi
 fi
 
-# set PATH so it includes user's private bin if it exists
-if [ -d "$HOME/bin" ] ; then
-    PATH="$HOME/bin:$PATH"
-fi
+# Make ~/bin and add to path
+mkdir -p $HOME/bin
+PATH="$HOME/bin:$PATH"
 
 NPM_PACKAGES=$HOME/.npm-packages
 mkdir -p $NPM_PACKAGES

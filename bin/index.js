@@ -7,11 +7,11 @@ var symlinkOrReplaceFilesInFolderSync = require('../util/symlink-or-replace-file
 
 module.exports.install = function () {
   if (process.platform !== 'win32') {
-    logHelper.logStepStarted('vim');
-    var sourceDir = path.join(__dirname, 'config'); 
-    var destDir = path.join(getHomePath());
+    logHelper.logStepStarted('bin');
+    var sourceDir = path.join(__dirname, 'commands'); 
+    var destDir = path.join(getHomePath(), 'bin');
     var files = fs.readdirSync(sourceDir);
-    logHelper.logSubStepPartialStarted('applying config files');
+    logHelper.logSubStepPartialStarted('exposing commands in ~/bin');
     symlinkOrReplaceFilesInFolderSync(files, sourceDir, destDir);
     logHelper.logSubStepPartialSuccess();
   }
