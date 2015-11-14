@@ -1,6 +1,8 @@
 # Tyriar's dotfiles
 
-My dot files for Ubuntu.
+My dotfiles for Ubuntu.
+
+![](terminal.png)
 
 ## Installing/syncing environment
 
