@@ -42,13 +42,13 @@ git_prompt() {
 			local deletions=$(echo $file_summary_output | grep -o -E '([0-9]+ d)' | sed "s/ d//g");
 			
 			if [ ! -z "$insertions" ]; then
-				change_summary+="\e[0;32m+${insertions}"
+				change_summary+="\e[0;2;32m+${insertions}"
 				if [ ! -z "$deletions" ]; then
 					change_summary+="\e[1;30m/"
 				fi
 			fi
 			if [ ! -z "$deletions" ]; then
-				change_summary+="\e[0;31m-${deletions}"
+				change_summary+="\e[0;2;31m-${deletions}"
 			fi
 			
 			# Check for untracked files.
@@ -56,7 +56,7 @@ git_prompt() {
 				if [ ! -z "$insertions" ] || [ ! -z "$deletions" ]; then
 					change_summary+="\e[1;30m/"
 				fi
-				change_summary+='\e[0;36m?';
+				change_summary+='\e[0;2;36m?';
 			fi;
 			if [ ! -z "$change_summary" ]; then
 				change_summary=" ${change_summary}\e[0m"
@@ -80,4 +80,5 @@ PS1="\n";
 PS1+="\[\e[01;34m\]\w\[\e[00m\]";
 PS1+="\$(git_prompt \"\[\e[1;35m\]\")\e[0m";
 PS1+="\n";
-PS1+="\[\e[1;32m\]❯ \[\e[0m\]";
+PS1+="\[\e[1;32m\]"
+PS1+="❯ \[\e[0m\]";
