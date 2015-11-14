@@ -16,13 +16,11 @@ function getVSCodeConfigDir() {
 }
 
 module.exports.install = function () {
-  if (process.platform !== 'win32') {
-    logHelper.logStepStarted('vscode');
-    var sourceDir = path.join(__dirname, 'config'); 
-    var destDir = getVSCodeConfigDir();
-    var files = fs.readdirSync(sourceDir);
-    logHelper.logSubStepPartialStarted('applying config files');
-    symlinkOrReplaceFilesInFolderSync(files, sourceDir, destDir);
-    logHelper.logSubStepPartialSuccess();
-  }
+  logHelper.logStepStarted('vscode');
+  var sourceDir = path.join(__dirname, 'config'); 
+  var destDir = getVSCodeConfigDir();
+  var files = fs.readdirSync(sourceDir);
+  logHelper.logSubStepPartialStarted('applying config files');
+  symlinkOrReplaceFilesInFolderSync(files, sourceDir, destDir);
+  logHelper.logSubStepPartialSuccess();
 };
