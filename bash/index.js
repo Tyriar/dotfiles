@@ -6,7 +6,7 @@ var symlinkOrReplaceFilesInFolderSync = require('../util/symlink-or-replace-file
 
 module.exports.install = function () {
   if (process.platform !== 'win32') {
-    console.log('Installing bash...');
+    console.log('bash');
     var sourceDir = path.join(__dirname, 'config'); 
     var destDir = path.join(getHomePath());
     var files = fs.readdirSync(sourceDir);

@@ -7,7 +7,8 @@ var process = require('process');
 
 var allPrograms = [
   'atom',
-  'bash'
+  'bash',
+  'gnome-terminal'
 ];
 
 var cli = meow({
@@ -37,7 +38,6 @@ if (cli.input[0] in commands) {
 }
 
 function install(programList) {
-  console.log(programList);
   if (programList === undefined) {
     allPrograms.forEach(installProgram);
   } else {

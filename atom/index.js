@@ -1,12 +1,11 @@
 var chalk = require('chalk');
 var fs = require('fs');
 var getHomePath = require('home-path');
-var os = require('os');
 var packageNames = require('./packages').names;
 var path = require('path');
 var process = require('process');
 var symlinkOrReplaceFilesInFolderSync = require('../util/symlink-or-replace-files-in-folder-sync');
-var syncExec = require('sync-exec');
+var execAndReportSync = require('../util/exec-and-report-sync');
 
 function installConfig() {
   var sourceDir = path.join(__dirname, 'config'); 
@@ -20,19 +19,16 @@ function installAllPackages() {
 }
 
 function installPackage(name) {
-  process.stdout.write('Installing ' + name);
-  var result = syncExec('apm install ' + name);
-  if (result.status === 0) {
-    var successChar = process.platform === 'win32' ? '\u221A' : '✔';
-    process.stdout.write(' ' + chalk.green(successChar) + os.EOL);
+  if (!fs.existsSync(path.join(getHomePath(), '.atom', 'packages', name))) {
+    execAndReportSync('  installing ' + name, 'apm install ' + name);
   } else {
-    console.error('Error installing ' + name);
-    console.error(result);
+    var successChar = process.platform === 'win32' ? '\u221A' : '✔';
+    console.log('  ' + name + ' already installed ' + chalk.green(successChar));
   }
 }
 
 module.exports.install = function () {
-  console.log('Installing atom...');
+  console.log('atom');
   installConfig();
   installAllPackages();
 };
