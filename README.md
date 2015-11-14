@@ -1,9 +1,10 @@
 # Tyriar's dotfiles
 
-My dot files and development tools for Ubuntu
+My dot files for Ubuntu.
 
-## Syncing environment
+## Installing/syncing environment
 
 ```bash
-. ./sync
+node cli.js install
+source ~/.bash_profile
 ```
