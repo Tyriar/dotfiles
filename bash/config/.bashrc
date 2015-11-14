@@ -36,6 +36,7 @@ if [ -z "${debian_chroot:-}" ] && [ -r /etc/debian_chroot ]; then
     debian_chroot=$(cat /etc/debian_chroot)
 fi
 
+# set prompt
 ssh_indicator=''
 if [ -n "$SSH_CLIENT" ] || [ -n "$SSH_TTY" ]; then
   ssh_indicator='\[\e[01;31m\]\D{[ssh]}\[\e[00m\]'
@@ -66,8 +67,8 @@ if ! shopt -oq posix; then
   fi
 fi
 
-NPM_PACKAGES=$HOME/.npm-packages
-mkdir -p $NPM_PACKAGES
-npm config set prefix $NPM_PACKAGES
-PATH=$NPM_PACKAGES/bin:$PATH
-NODE_PATH="$NPM_PACKAGES/lib/node_modules:$NODE_PATH"
+# Source .bashrc_local if it exists for .bashrc commands specific to this
+# machine.
+if [ -r ~/.bashrc_local ]; then
+  . ~/.bashrc_local
+fi

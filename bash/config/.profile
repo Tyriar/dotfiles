@@ -1,0 +1,34 @@
+# ~/.profile: executed by the command interpreter for login shells.
+# This file is not read by bash(1), if ~/.bash_profile or ~/.bash_login
+# exists.
+# see /usr/share/doc/bash/examples/startup-files for examples.
+# the files are located in the bash-doc package.
+
+# the default umask is set in /etc/profile; for setting the umask
+# for ssh logins, install and configure the libpam-umask package.
+#umask 022
+
+# if running bash
+if [ -n "$BASH_VERSION" ]; then
+    # include .bashrc if it exists
+    if [ -f "$HOME/.bashrc" ]; then
+	. "$HOME/.bashrc"
+    fi
+fi
+
+# set PATH so it includes user's private bin if it exists
+if [ -d "$HOME/bin" ] ; then
+    PATH="$HOME/bin:$PATH"
+fi
+
+NPM_PACKAGES=$HOME/.npm-packages
+mkdir -p $NPM_PACKAGES
+npm config set prefix $NPM_PACKAGES
+PATH=$NPM_PACKAGES/bin:$PATH
+NODE_PATH="$NPM_PACKAGES/lib/node_modules:$NODE_PATH"
+
+# Source .profile_local if it exists for .profile commands specific to this
+# machine.
+if [ -r ~/.profile_local ]; then
+  . ~/.profile_local
+fi
