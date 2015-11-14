@@ -32,10 +32,11 @@ var commands = {
 };
 
 if (cli.input[0] in commands) {
-  commands[cli.input[0]].apply(cli.input.splice(1));
+  commands[cli.input[0]].apply(undefined, cli.input.slice(1));
 }
 
 function install(programList) {
+  console.log(programList);
   if (programList === undefined) {
     allPrograms.forEach(installProgram);
   } else {
