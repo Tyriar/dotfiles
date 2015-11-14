@@ -1,3 +1,4 @@
+var chalk = require('chalk');
 var getHomePath = require('home-path');
 var os = require('os');
 var path = require('path');
@@ -33,7 +34,8 @@ function installPackage(name) {
   process.stdout.write('Installing ' + name);
   var result = syncExec('apm install ' + name);
   if (result.status === 0) {
-    process.stdout.write(' done' + os.EOL);
+    var successChar = process.platform === 'win32' ? '\u221A' : '✔';
+    process.stdout.write(' ' + chalk.green(successChar) + os.EOL);
   } else {
     console.error('Error installing ' + name);
     console.error(result);
