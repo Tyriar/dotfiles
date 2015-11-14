@@ -1,5 +1,9 @@
 // Place your key bindings in this file to overwrite the defaults
 [
-{ "key": "alt+-",       "command": "workbench.action.navigateBack" },
-{ "key": "alt+shift+-", "command": "workbench.action.navigateForward" },
+{ "key": "alt+-",           "command": "workbench.action.navigateBack" },
+{ "key": "alt+shift+-",     "command": "workbench.action.navigateForward" },
+{ "key": "ctrl+shift+down", "command": "editor.action.moveLinesDownAction",
+                            "when": "editorTextFocus" },
+{ "key": "ctrl+shift+up",   "command": "editor.action.moveLinesUpAction",
+                            "when": "editorTextFocus" },
 ]
