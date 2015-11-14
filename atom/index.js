@@ -9,7 +9,6 @@ var symlinkOrReplaceFilesInFolderSync = require('../util/symlink-or-replace-file
 var syncExec = require('sync-exec');
 
 function installConfig() {
-  console.log('Installing atom...');
   var sourceDir = path.join(__dirname, 'config'); 
   var destDir = path.join(getHomePath(), '.atom');
   var files = fs.readdirSync(sourceDir);
@@ -33,6 +32,7 @@ function installPackage(name) {
 }
 
 module.exports.install = function () {
+  console.log('Installing atom...');
   installConfig();
   installAllPackages();
 };
