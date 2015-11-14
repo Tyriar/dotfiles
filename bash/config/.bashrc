@@ -31,18 +31,6 @@ shopt -s checkwinsize
 # make less more friendly for non-text input files, see lesspipe(1)
 [ -x /usr/bin/lesspipe ] && eval "$(SHELL=/bin/sh lesspipe)"
 
-# set variable identifying the chroot you work in (used in the prompt below)
-if [ -z "${debian_chroot:-}" ] && [ -r /etc/debian_chroot ]; then
-    debian_chroot=$(cat /etc/debian_chroot)
-fi
-
-# set prompt
-ssh_indicator=''
-if [ -n "$SSH_CLIENT" ] || [ -n "$SSH_TTY" ]; then
-  ssh_indicator='\[\e[01;31m\]\D{[ssh]}\[\e[00m\]'
-fi
-PS1='${debian_chroot:+($debian_chroot)}\[\e[01;32m\]\u@\h\[\e[00m\]'$ssh_indicator':\[\e[01;34m\]\w\[\e[00m\]\$ '
-
 # If this is an xterm set the title to user@host:dir
 case "$TERM" in
 xterm*|rxvt*)
@@ -65,6 +53,11 @@ if ! shopt -oq posix; then
   elif [ -f /etc/bash_completion ]; then
     . /etc/bash_completion
   fi
+fi
+
+# Source .bash_prompt if it exists
+if [ -r ~/.bash_prompt ]; then
+  . ~/.bash_prompt
 fi
 
 # Source .bashrc_local if it exists for .bashrc commands specific to this
