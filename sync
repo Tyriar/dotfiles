@@ -2,11 +2,11 @@ DIR=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
 
 echo -e "\e[33m~~~Copying dotfiles~~~\e[0m"
 
-cp -f $DIR/.bash_aliases ~
-cp -f $DIR/.bash_profile ~
-cp -f $DIR/.bashrc ~
-cp -f $DIR/.gitconfig ~
-cp -f $DIR/.vimrc ~
+cp -f $DIR/bash/.bash_aliases ~
+cp -f $DIR/bash/.bash_profile ~
+cp -f $DIR/bash/.bashrc ~
+cp -f $DIR/git/.gitconfig ~
+cp -f $DIR/vim/.vimrc ~
 
 $DIR/sync-helpers/atom.sh
 $DIR/sync-helpers/gnome-terminal-profile.sh
