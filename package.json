@@ -1,0 +1,29 @@
+{
+  "name": "dotfiles",
+  "version": "1.0.0",
+  "description": "My dotfiles for Ubuntu and Windows",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tyriar/dotfiles.git"
+  },
+  "bin": "cli.js",
+  "keywords": [
+    "config",
+    "configuration",
+    "dotfiles"
+  ],
+  "author": "Daniel Imms <tyriar@tyriar.com> (http://www.growingwiththeweb.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Tyriar/dotfiles/issues"
+  },
+  "homepage": "https://github.com/Tyriar/dotfiles#readme",
+  "dependencies": {
+    "chalk": "^1.1.1",
+    "home-path": "^1.0.1",
+    "meow": "^3.5.0",
+    "symlink-or-copy": "^1.0.1",
+    "sync-exec": "^0.6.2"
+  }
+}

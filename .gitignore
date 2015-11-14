@@ -1,4 +1,4 @@
-build/
+node_modules
 
 atom.symlink/.apm
 atom.symlink/.node-gyp
