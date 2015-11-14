@@ -1,4 +1,3 @@
-var execAndReportSync = require('../util/exec-and-report-sync');
 var fs = require('fs');
 var getHomePath = require('home-path');
 var logHelper = require('../util/log-helper');
@@ -8,7 +7,12 @@ var symlinkOrReplaceFilesInFolderSync = require('../util/symlink-or-replace-file
 
 module.exports.install = function () {
   if (process.platform !== 'win32') {
-    logHelper.logStepStarted('gnome-terminal');
-    execAndReportSync('applying profile theme', path.join(__dirname, 'profile-preferences.sh'));
+    logHelper.logStepStarted('git');
+    var sourceDir = path.join(__dirname, 'config'); 
+    var destDir = path.join(getHomePath());
+    var files = fs.readdirSync(sourceDir);
+    logHelper.logSubStepPartialStarted('applying config files');
+    symlinkOrReplaceFilesInFolderSync(files, sourceDir, destDir);
+    logHelper.logSubStepPartialSuccess();
   }
 };

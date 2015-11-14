@@ -8,7 +8,9 @@ var process = require('process');
 var allPrograms = [
   'atom',
   'bash',
-  'gnome-terminal'
+  'git',
+  'gnome-terminal',
+  'vim'
 ];
 
 var cli = meow({

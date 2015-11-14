@@ -36,4 +36,3 @@
   st = status
   up = branch -u
   upo = branch -u origin/master
-
