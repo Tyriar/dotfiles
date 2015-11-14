@@ -120,3 +120,9 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
+
+NPM_PACKAGES=$HOME/.npm-packages
+mkdir -p $NPM_PACKAGES
+npm config set prefix $NPM_PACKAGES
+PATH=$NPM_PACKAGES/bin:$PATH
+NODE_PATH="$NPM_PACKAGES/lib/node_modules:$NODE_PATH"
