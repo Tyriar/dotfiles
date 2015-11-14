@@ -1,6 +1,7 @@
 var chalk = require('chalk');
 var getHomePath = require('home-path');
 var os = require('os');
+var packageNames = require('./packages').names;
 var path = require('path');
 var process = require('process');
 var symlinkOrReplaceSync = require('../util').symlinkOrReplaceSync;
@@ -14,20 +15,8 @@ function installConfig() {
   symlinkOrReplaceSync(path.join(__dirname, 'config', 'styles.less'), path.join(configDir, 'styles.less'));
 }
 
-function installPackages() {
-  var packages = [
-    'file-icons',
-    'minimap',
-    'minimap-find-and-replace',
-    'multi-wrap-guide',
-    'navigation-history',
-    'project-finder',
-    'project-manager',
-    'sort-lines',
-    'switch-header-source',
-    'tab-switcher'
-  ];
-  packages.forEach(installPackage);
+function installAllPackages() {
+  packageNames.forEach(installPackage);
 }
 
 function installPackage(name) {
@@ -44,5 +33,5 @@ function installPackage(name) {
 
 module.exports.install = function () {
   installConfig();
-  installPackages();
+  installAllPackages();
 };
