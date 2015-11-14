@@ -27,6 +27,7 @@ if (cli.input.length === 0) {
   process.exit(1);
 }
 
+// vscode windows settings are at ~\\AppData\\Roaming\\Code\\User
 var commands = {
   'install': install
 };
