@@ -22,7 +22,7 @@ var cli = meow({
 });
 
 if (cli.input.length === 0) {
-  console.log('Error: No command specified');
+  console.error('Error: No command specified');
   cli.showHelp();
   process.exit(1);
 }
@@ -44,9 +44,8 @@ function install(programList) {
 }
 
 function installProgram(program) {
-  console.log(program);
   if (allPrograms.indexOf(program) === -1) {
-    console.log('Error: tried to install non-existing program "' + program + '"');
+    console.error('Error: tried to install non-existing program "' + program + '"');
     return;
   }
   require('./' + program).install();
