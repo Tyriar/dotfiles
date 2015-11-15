@@ -4,5 +4,6 @@
 { "key": "ctrl+shift+down", "command": "editor.action.moveLinesDownAction",
                             "when": "editorTextFocus" },
 { "key": "ctrl+shift+up",   "command": "editor.action.moveLinesUpAction",
-                            "when": "editorTextFocus" },
+                            "when": "editorTextFocus" }
+{ "key": "ctrl+shift+o",    "command": "workbench.action.files.openFolder" },
 ]
