@@ -38,16 +38,18 @@
       "find-and-replace": true
     charHeight: 3
   "project-finder": {}
+  "fuzzy-finder":
+    useAlternateScoring: true
+".js.source":
+  editor:
+    tabLength: 2
+".python.source":
+  editor:
+    tabLength: 2
+".shell.source":
+  editor:
+    tabLength: 4
 ".java.source":
   editor:
     preferredLineLength: 100
     tabLength: 4
-".shell.source":
-  editor:
-    tabLength: 4
-".python.source":
-  editor:
-    tabLength: 2
-".js.source":
-  editor:
-    tabLength: 2
