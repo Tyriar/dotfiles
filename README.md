@@ -7,6 +7,7 @@ My dotfiles for Ubuntu.
 ## Installing/syncing environment
 
 ```bash
+npm install
 node cli.js install
 source ~/.bash_profile
 ```
