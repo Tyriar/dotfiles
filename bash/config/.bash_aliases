@@ -30,8 +30,6 @@ alias wst='cd ~/workspaces; echo -e "\e[33m~~~git status on workspaces~~~\e[0m";
 
 alias python=python3
 
-alias code=Code
-
 # Source .bash_aliases_local if it exists for .bash_aliases commands specific to this
 # machine.
 if [ -r ~/.bash_aliases_local ]; then
