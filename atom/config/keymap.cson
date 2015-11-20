@@ -2,6 +2,7 @@
   'alt-\\': 'unset!' # tree-view:toggle-focus default
   'ctrl-|': 'unset!' # tree-view:reveal-active-file default
   'ctrl-0': 'tree-view:reveal-active-file'
+  'ctrl-h': 'find-and-replace:show'
 
 'atom-workspace atom-text-editor:not([mini])':
   'ctrl-up': 'unset!' # editor:move-line-up default
