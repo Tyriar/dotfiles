@@ -12,7 +12,7 @@ function getVSCodeConfigDir() {
   } else {
     baseDir = path.join(baseDir, '.config');
   }
-	return path.join(baseDir, 'Code', 'User');
+  return path.join(baseDir, 'Code', 'User');
 }
 
 module.exports.install = function () {
