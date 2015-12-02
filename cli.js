@@ -20,7 +20,7 @@ var cli = meow({
 		'Usage: dotfiles install [<program>]',
 		'',
 		'where <program> is one of:',
-		'    atom',
+		'    ' + allPrograms.join(', '),
     '',
     'Specify no <program> to install everything'
 	]
