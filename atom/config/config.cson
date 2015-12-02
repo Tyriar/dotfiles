@@ -6,7 +6,6 @@
   metrics:
     userId: "a22f0efc-41ce-ed43-e5c0-88884b9fac7c"
   editor:
-    fontSize: 12
     fontFamily: "Hack"
     scrollPastEnd: true
     showIndentGuide: true
@@ -37,19 +36,22 @@
     plugins:
       "find-and-replace": true
     charHeight: 3
-  "project-finder": {}
   "fuzzy-finder":
     useAlternateScoring: true
-".js.source":
-  editor:
-    tabLength: 2
-".python.source":
-  editor:
-    tabLength: 2
-".shell.source":
-  editor:
-    tabLength: 4
+  "project-finder":
+    rootPath: "/home/daniel/workspaces"
+  "tree-view":
+    squashDirectoryNames: true
 ".java.source":
   editor:
     preferredLineLength: 100
     tabLength: 4
+".shell.source":
+  editor:
+    tabLength: 4
+".python.source":
+  editor:
+    tabLength: 2
+".js.source":
+  editor:
+    tabLength: 2
