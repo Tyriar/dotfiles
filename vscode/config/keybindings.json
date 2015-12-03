@@ -1,9 +1,12 @@
 [
 { "key": "alt+-",           "command": "workbench.action.navigateBack" },
 { "key": "alt+shift+-",     "command": "workbench.action.navigateForward" },
+{ "key": "alt+shift+down",  "command": "editor.action.insertCursorBelow",
+                            "when": "editorTextFocus" },
+{ "key": "ctrl+r",          "command": "workbench.action.gotoSymbol" },
 { "key": "ctrl+shift+down", "command": "editor.action.moveLinesDownAction",
                             "when": "editorTextFocus" },
 { "key": "ctrl+shift+up",   "command": "editor.action.moveLinesUpAction",
-                            "when": "editorTextFocus" }
-{ "key": "ctrl+shift+o",    "command": "workbench.action.files.openFolder" },
+                            "when": "editorTextFocus" },
+{ "key": "ctrl+shift+o",    "command": "workbench.action.files.openFolder" }
 ]
