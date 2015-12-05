@@ -17,9 +17,9 @@ var allPrograms = [
 
 var cli = meow({
 	help: [
-		'Usage: dotfiles install [<program>]',
+		'Usage: dotfiles install [<program>...]',
 		'',
-		'where <program> is one of:',
+		'where <program> is one or more of of:',
 		'    ' + allPrograms.join(', '),
     '',
     'Specify no <program> to install everything'
@@ -37,14 +37,14 @@ var commands = {
 };
 
 if (cli.input[0] in commands) {
-  commands[cli.input[0]].apply(undefined, cli.input.slice(1));
+  commands[cli.input[0]].call(undefined, cli.input.splice(1));
 }
 
 function install(programList) {
-  if (programList === undefined) {
+  if (programList.length === 0) {
     allPrograms.forEach(installProgram);
   } else {
-    installProgram(programList);
+    programList.forEach(installProgram);
   }
 }
 
