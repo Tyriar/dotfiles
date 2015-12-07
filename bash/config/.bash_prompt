@@ -1,3 +1,5 @@
+#!/bin/bash
+
 git_prompt() {
 	local branchName='';
 	local git_arrows=""
@@ -36,11 +38,11 @@ git_prompt() {
 			if [ ! -z "$git_arrows" ]; then
 				git_arrows="\e[1;30m[${git_arrows}\e[1;30m]"
 			fi
-			
+
 			local file_summary_output=$(git diff --shortstat);
 			local insertions=$(echo $file_summary_output | grep -o -E '([0-9]+ i)' | sed "s/ i//g");
 			local deletions=$(echo $file_summary_output | grep -o -E '([0-9]+ d)' | sed "s/ d//g");
-			
+
 			if [ ! -z "$insertions" ]; then
 				change_summary+="\e[0;2;32m+${insertions}"
 				if [ ! -z "$deletions" ]; then
@@ -50,7 +52,7 @@ git_prompt() {
 			if [ ! -z "$deletions" ]; then
 				change_summary+="\e[0;2;31m-${deletions}"
 			fi
-			
+
 			# Check for untracked files.
 			if [ -n "$(git ls-files --others --exclude-standard)" ]; then
 				if [ ! -z "$insertions" ] || [ ! -z "$deletions" ]; then
@@ -83,4 +85,3 @@ PS1+="\n";
 PS1+="\[\e[1;32m\]";
 PS1+="❯ \[\e[0m\]";
 PS2="… ";
-

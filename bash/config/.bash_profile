@@ -1,3 +1,5 @@
+#!/bin/bash
+
 if [ -r ~/.profile ]; then
   . ~/.profile;
 fi
@@ -14,4 +16,3 @@ fi
 if [ -r ~/.bash_profile_local ]; then
   . ~/.bash_profile_local
 fi
-
