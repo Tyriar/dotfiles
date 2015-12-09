@@ -1,8 +1,0 @@
-{
-  "extensions":
-  [
-    ".jshintrc",
-    ".json",
-  ],
-  "tab_size": 2,
-}

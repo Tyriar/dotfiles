@@ -1,8 +1,0 @@
-[
-  // Default is to close sublime
-  { "keys": ["ctrl+shift+w"], "command": "close_all" },
-  // Close to ctrl+0 tp focus sidebar
-  { "keys": ["ctrl+9"], "command": "reveal_in_side_bar"},
-  // Project > Refresh Folders
-  { "keys": ["f5"], "command": "refresh_folder_list"},
-]

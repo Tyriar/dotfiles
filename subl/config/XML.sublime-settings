@@ -1,8 +1,0 @@
-{
-  "extensions":
-  [
-    // Atom feed file
-    ".atom",
-  ],
-  "tab_size": 2,
-}

@@ -1,4 +1,0 @@
-[
-  { "keys": ["ctrl+shift+w"], "command": "close_all" },
-  { "keys": ["ctrl+9"], "command": "reveal_in_side_bar"},
-]
