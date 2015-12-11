@@ -8,7 +8,6 @@
     "project-finder",
     "project-manager",
     "sort-lines",
-    "switch-header-source",
-    "tab-switcher"
+    "switch-header-source"
   ]
 }
