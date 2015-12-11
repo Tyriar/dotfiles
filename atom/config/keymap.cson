@@ -13,9 +13,3 @@
 'atom-text-editor:not([mini])':
   'f5': 'unset!' # sort-lines:sort default
   'f9': 'sort-lines:sort'
-
-'atom-workspace':
-  'alt-]': 'unset!' # tab-switcher:next default
-  'ctrl-tab': 'tab-switcher:next'
-  'alt-[': 'unset!' # tab-switcher:previous default
-  'ctrl-shift-tab': 'tab-switcher:previous'
