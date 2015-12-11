@@ -16,14 +16,14 @@ var allPrograms = [
 ];
 
 var cli = meow({
-	help: [
-		'Usage: dotfiles install [<program>...]',
-		'',
-		'where <program> is one or more of of:',
-		'    ' + allPrograms.join(', '),
+  help: [
+    'Usage: dotfiles install [<program>...]',
+    '',
+    'where <program> is one or more of of:',
+    '    ' + allPrograms.join(', '),
     '',
     'Specify no <program> to install everything'
-	]
+  ]
 });
 
 if (cli.input.length === 0) {
