@@ -2,6 +2,7 @@ var chalk = require('chalk');
 var fs = require('fs');
 var getHomePath = require('home-path');
 var logHelper = require('../util/log-helper');
+var mkdirpSync = require('mkdirp').sync;
 var packageNames = require('./packages').names;
 var path = require('path');
 var process = require('process');
@@ -9,8 +10,9 @@ var symlinkOrReplaceFilesInFolderSync = require('../util/symlink-or-replace-file
 var execAndReportSync = require('../util/exec-and-report-sync');
 
 function installConfig() {
-  var sourceDir = path.join(__dirname, 'config'); 
+  var sourceDir = path.join(__dirname, 'config');
   var destDir = path.join(getHomePath(), '.atom');
+  mkdirpSync(destDir);
   var files = fs.readdirSync(sourceDir);
   logHelper.logSubStepPartialStarted('applying config files');
   symlinkOrReplaceFilesInFolderSync(files, sourceDir, destDir);

@@ -23,6 +23,7 @@
     "chalk": "^1.1.1",
     "home-path": "^1.0.1",
     "meow": "^3.5.0",
+    "mkdirp": "^0.5.1",
     "symlink-or-copy": "^1.0.1",
     "sync-exec": "^0.6.2"
   }
