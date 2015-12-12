@@ -1,6 +1,6 @@
-# Tyriar's dotfiles
+# Daniel Imms' dotfiles
 
-My dotfiles for Ubuntu.
+My dotfiles for Linux and Windows.
 
 ![](terminal.png)
 
