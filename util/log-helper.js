@@ -27,7 +27,7 @@ function logSubStepPartialSuccess() {
 
 function logSubStepPartialFail() {
   var successChar = process.platform === 'win32' ? 'X' : '✗';
-  process.stdout.write(' ' + chalk.green(successChar) + os.EOL);
+  process.stdout.write(' ' + chalk.red(successChar) + os.EOL);
 }
 
 module.exports = {
