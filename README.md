@@ -14,4 +14,5 @@ source ~/.bash_profile
 
 ## Acknowledgements
 
-- [Nicolas Gallagher](https://github.com/necolas) - [bash_prompt script](https://github.com/necolas/dotfiles/blob/master/shell/bash_prompt)
+- [Nicolas Gallagher](https://github.com/necolas) - [Bash prompt script](https://github.com/necolas/dotfiles)
+- [Ron Waldon](https://github.com/jokeyrhyme) - [Font install script](https://github.com/jokeyrhyme/dotfiles)

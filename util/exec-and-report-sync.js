@@ -11,8 +11,7 @@ module.exports = function (actionName, command) {
     var successChar = process.platform === 'win32' ? '\u221A' : '✔';
     process.stdout.write(' ' + chalk.green(successChar) + os.EOL);
   } else {
-    logHelper.logSubStepFail();
-    console.error(chalk.red('Error running command: ' + command));
+    logHelper.logSubStepFail('Error running command: ' + command);
     console.error(result);
   }
 }

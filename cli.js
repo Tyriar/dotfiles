@@ -9,6 +9,7 @@ var allPrograms = [
   'atom',
   'bash',
   'bin',
+  'fonts',
   'git',
   'gnome-terminal',
   'vim',
