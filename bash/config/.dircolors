@@ -1,0 +1,37 @@
+NORMAL 00 # global default, although everything should be something.
+FILE 00 # normal file
+DIR 1;34 # directory
+LINK 1;36 # symbolic link
+FIFO 40;33 # pipe
+SOCK 1;35 # socket
+BLK 1;40;33 # block device driver
+CHR 1;40;33 # character device driver
+ORPHAN 1;40;31 # symlink to nonexistent file
+
+# Files with execute permission
+EXEC 1;32
+
+# Archives or compressed
+.tar 1;31
+.tgz 1;31
+.arj 1;31
+.taz 1;31
+.lzh 1;31
+.zip 1;31
+.z 1;31
+.Z 1;31
+.gz 1;31
+.deb 1;31
+
+# Images and videos
+.bmp 35
+.gif 35
+.jpg 35
+.png 35
+.ppm 35
+.tga 35
+.tif 35
+.xbm 35
+.xpm 35
+.avi 35
+.mpg 35
