@@ -6,7 +6,7 @@ function __prompt_command() {
   local LAST_EXIT=$?
   PS1="\n";
   PS1+="\[\e[01;34m\]\w\[\e[00m\]";
-  PS1+=" \$(git_prompt \"\[\e[1;35m\]\")\e[0m";
+  PS1+="\$(__git_prompt)\e[0m";
   PS1+="\n";
   if [ $LAST_EXIT -eq 0 ]; then
     PS1+="\[\e[1;32m\]";
@@ -18,18 +18,18 @@ function __prompt_command() {
 }
 
 function __git_prompt() {
-  local branchName='';
+  local branchName="";
   local git_arrows=""
   local change_summary=""
 
   # Check if the current directory is in a Git repository.
-  if [ $(git rev-parse --is-inside-work-tree &>/dev/null; echo "${?}") == '0' ]; then
+  if [ $(git rev-parse --is-inside-work-tree &>/dev/null; echo "${?}") == "0" ]; then
 
     if [ "$(git count-objects -v | grep size-pack | sed 's/size-pack: //')" -gt "500000" ]; then
       change_summary="\e[0;2;37m✗"
     else
       # check if the current directory is in .git before running git checks
-      if [ "$(git rev-parse --is-inside-git-dir 2> /dev/null)" == 'false' ]; then
+      if [ "$(git rev-parse --is-inside-git-dir 2> /dev/null)" == "false" ]; then
 
         # Ensure the index is up to date.
         git update-index --really-refresh -q &>/dev/null;
@@ -94,7 +94,7 @@ function __git_prompt() {
         git rev-parse --short HEAD 2> /dev/null || \
         echo '(unknown)')";
 
-    echo -e "${1}\e[1;33m@${branchName}${git_arrows}${change_summary}"
+    echo -e " \e[1;33m@${branchName}${git_arrows}${change_summary}"
   else
     return;
   fi;
