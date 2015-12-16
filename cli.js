@@ -5,7 +5,7 @@ var chalk = require('chalk');
 var meow = require('meow');
 var process = require('process');
 
-var allPrograms = [
+var allModules = [
   'atom',
   'bash',
   'bin',
@@ -18,12 +18,12 @@ var allPrograms = [
 
 var cli = meow({
   help: [
-    'Usage: dotfiles install [<program>...]',
+    'Usage: dotfiles install [<module>...]',
     '',
-    'where <program> is one or more of of:',
-    '    ' + allPrograms.join(', '),
+    'where <module> is one or more of of:',
+    '    ' + allModules.join(', '),
     '',
-    'Specify no <program> to install everything'
+    'Specify no <module> to install everything'
   ]
 });
 
@@ -41,18 +41,18 @@ if (cli.input[0] in commands) {
   commands[cli.input[0]].call(undefined, cli.input.splice(1));
 }
 
-function install(programList) {
-  if (programList.length === 0) {
-    allPrograms.forEach(installProgram);
+function install(moduleList) {
+  if (moduleList.length === 0) {
+    allModules.forEach(installModule);
   } else {
-    programList.forEach(installProgram);
+    moduleList.forEach(installModule);
   }
 }
 
-function installProgram(program) {
-  if (allPrograms.indexOf(program) === -1) {
-    console.error('Error: tried to install non-existing program "' + program + '"');
+function installModule(module) {
+  if (allModules.indexOf(module) === -1) {
+    console.error('Error: tried to install non-existing module "' + module + '"');
     return;
   }
-  require('./' + program).install();
+  require('./' + module).install();
 }
