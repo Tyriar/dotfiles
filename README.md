@@ -12,6 +12,12 @@ node cli.js install
 source ~/.bash_profile
 ```
 
+## Installing a single module
+
+```bash
+node cli.js install <module>
+```
+
 ## Acknowledgements
 
 - [Nicolas Gallagher](https://github.com/necolas) - [Bash prompt script](https://github.com/necolas/dotfiles)
