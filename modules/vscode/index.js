@@ -1,10 +1,10 @@
 var fs = require('fs');
 var getHomePath = require('home-path');
-var logHelper = require('../util/log-helper');
+var logHelper = require('../../util/log-helper');
 var mkdirpSync = require('mkdirp').sync;
 var path = require('path');
 var process = require('process');
-var symlinkOrReplaceFilesInFolderSync = require('../util/symlink-or-replace-files-in-folder-sync');
+var symlinkOrReplaceFilesInFolderSync = require('../../util/symlink-or-replace-files-in-folder-sync');
 
 function getVSCodeConfigDir() {
   var baseDir = getHomePath();

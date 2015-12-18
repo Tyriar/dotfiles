@@ -1,13 +1,13 @@
 var chalk = require('chalk');
-var execAndReportSync = require('../util/exec-and-report-sync');
+var execAndReportSync = require('../../util/exec-and-report-sync');
 var fs = require('fs');
 var getHomePath = require('home-path');
 var gnomeTerminalVersion = require('gnome-terminal-version');
-var logHelper = require('../util/log-helper');
+var logHelper = require('../../util/log-helper');
 var path = require('path');
 var process = require('process');
 var semver = require('semver');
-var symlinkOrReplaceFilesInFolderSync = require('../util/symlink-or-replace-files-in-folder-sync');
+var symlinkOrReplaceFilesInFolderSync = require('../../util/symlink-or-replace-files-in-folder-sync');
 
 module.exports.install = function () {
   if (process.platform === 'linux') {

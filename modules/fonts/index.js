@@ -1,5 +1,5 @@
-var execAndReportSync = require('../util/exec-and-report-sync');
-var logHelper = require('../util/log-helper');
+var execAndReportSync = require('../../util/exec-and-report-sync');
+var logHelper = require('../../util/log-helper');
 var path = require('path');
 var process = require('process');
 

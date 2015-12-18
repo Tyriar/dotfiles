@@ -54,5 +54,5 @@ function installModule(module) {
     console.error('Error: tried to install non-existing module "' + module + '"');
     return;
   }
-  require('./' + module).install();
+  require('./modules/' + module).install();
 }
