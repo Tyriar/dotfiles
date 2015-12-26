@@ -39,7 +39,7 @@
   "fuzzy-finder":
     useAlternateScoring: true
   "project-finder":
-    rootPath: "/home/daniel/workspaces"
+    rootPath: "/home/daniel/dev"
   "tree-view":
     squashDirectoryNames: true
 ".java.source":
