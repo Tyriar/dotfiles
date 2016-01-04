@@ -1,8 +1,10 @@
 '.platform-win32, .platform-linux':
   'alt-\\': 'unset!' # tree-view:toggle-focus default
   'ctrl-|': 'unset!' # tree-view:reveal-active-file default
+  'ctrl-\\': 'unset!' # tree-view:toggle default
   'ctrl-0': 'tree-view:reveal-active-file'
   'ctrl-h': 'find-and-replace:show'
+  'ctrl-\\': 'pane:split-right'
 
 'atom-workspace atom-text-editor:not([mini])':
   'ctrl-up': 'unset!' # editor:move-line-up default
