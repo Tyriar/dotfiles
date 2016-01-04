@@ -9,4 +9,5 @@
 { "key": "ctrl+shift+up",   "command": "editor.action.moveLinesUpAction",
                             "when": "editorTextFocus" },
 { "key": "ctrl+shift+o",    "command": "workbench.action.files.openFolder" }
+{ "key": "ctrl+,",          "command": "workbench.action.openGlobalSettings" }
 ]
