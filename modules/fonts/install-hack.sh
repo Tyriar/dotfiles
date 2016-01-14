@@ -16,3 +16,6 @@ else
   fi
 fi
 rm "${TEMP}"
+
+# Reload font cache
+fc-cache -fv
