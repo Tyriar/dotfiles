@@ -15,3 +15,7 @@
 'atom-text-editor:not([mini])':
   'f5': 'unset!' # sort-lines:sort default
   'f9': 'sort-lines:sort'
+
+'body':
+  'ctrl-shift-w': 'unset!' # window:close default
+  'ctrl-shift-w': 'tabs:close-all-tabs'
