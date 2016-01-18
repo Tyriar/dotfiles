@@ -30,6 +30,9 @@ alias diary='mkdir -p ~/diary && vim ~/diary/`date +"%Y-%m-%d"`.md'
 # git status for all sub-directories in ~/dev
 alias wst='echo -e "\e[33m~~~git status on ~/dev~~~\e[0m"; for dir in $(ls ~/dev); do echo -e "\e[32m"$dir"\e[0m"; git -C ~/dev/$dir status -s; done'
 
+# Quick alias for find in current directory
+alias f='find . -name'
+
 alias python=python3
 
 # Source .bash_aliases_local if it exists for .bash_aliases commands specific to this
