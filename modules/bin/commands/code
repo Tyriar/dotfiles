@@ -1,1 +1,0 @@
-nohup Code "$@" > ~/.vscode/nohup.out 2>&1 &
