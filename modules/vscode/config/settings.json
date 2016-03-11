@@ -2,6 +2,6 @@
   "editor.fontFamily": "Hack",
   "editor.roundedSelection": false,
   "editor.insertSpaces": true,
-  "editor.tabSize": "auto",
+  "editor.detectIndentation": true,
   "files.trimTrailingWhitespace": true
 }
