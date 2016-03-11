@@ -8,7 +8,8 @@
                             "when": "editorTextFocus" },
 { "key": "ctrl+shift+up",   "command": "editor.action.moveLinesUpAction",
                             "when": "editorTextFocus" },
-{ "key": "ctrl+shift+w",    "command": "workbench.files.action.closeAllFiles" }
-{ "key": "ctrl+shift+o",    "command": "workbench.action.files.openFolder" }
-{ "key": "ctrl+,",          "command": "workbench.action.openGlobalSettings" }
+{ "key": "ctrl+w",          "command": "workbench.files.action.closeFiles" },
+{ "key": "ctrl+shift+w",    "command": "workbench.files.action.closeAllFiles" },
+{ "key": "ctrl+shift+o",    "command": "workbench.action.files.openFolder" },
+{ "key": "ctrl+,",          "command": "workbench.action.openGlobalSettings" },
 ]
