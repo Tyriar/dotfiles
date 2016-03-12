@@ -13,4 +13,5 @@
 { "key": "ctrl+shift+o",    "command": "workbench.action.files.openFolder" },
 { "key": "ctrl+,",          "command": "workbench.action.openGlobalSettings" },
 { "key": "alt+ctrl+p",      "command": "workbench.action.openRecent" },
+{ "key": "ctrl+shift+i",    "command": "workbench.action.toggleDevTools" },
 ]
