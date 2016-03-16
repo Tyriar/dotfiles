@@ -13,5 +13,5 @@
 { "key": "ctrl+shift+i",    "command": "workbench.action.toggleDevTools" },
 
 { "key": "ctrl+shift+w",    "command": "workbench.files.action.closeAllFiles" },
-{ "key": "ctrl+w",          "command": "workbench.files.action.closeFiles" },
+{ "key": "ctrl+w",          "command": "workbench.files.action.closeFile" },
 ]
