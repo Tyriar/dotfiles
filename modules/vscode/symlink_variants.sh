@@ -1,9 +1,14 @@
 # Symlink config files for all variants of Code to the stable versions
-CODE_STABLE_CONFIG="$HOME/.config/Code/User"
-CODE_INSIDER_CONFIG="$HOME/.config/Code - Insiders/User"
-CODE_ALPHA_CONFIG="$HOME/.config/Code - Alpha/User"
-CODE_DEV_CONFIG="$HOME/.config/Code-Development/User"
-CODE_OSS_CONFIG="$HOME/.config/Code - OSS/User"
+if [ -z "$1" ]; then
+  echo "The first argument must be the config directory"
+  exit 1
+fi
+
+CODE_STABLE_CONFIG="$1/Code/User"
+CODE_INSIDER_CONFIG="$1/Code - Insiders/User"
+CODE_ALPHA_CONFIG="$1/Code - Alpha/User"
+CODE_DEV_CONFIG="$1/Code-Development/User"
+CODE_OSS_CONFIG="$1/Code - OSS/User"
 
 for CONFIG_DIR in "$CODE_INSIDER_CONFIG" \
                   "$CODE_ALPHA_CONFIG" \
@@ -16,3 +21,4 @@ do
         ln -s "$CODE_STABLE_CONFIG/$JSON_FILE" "$CONFIG_DIR/$JSON_FILE"
     done
 done
+
