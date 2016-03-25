@@ -4,6 +4,18 @@ My dotfiles for Linux and Windows.
 
 ![](terminal.png)
 
+## Dependencies
+
+Node.js is the primary dependency, here are some helper scripts:
+
+```bash
+# For nodejs LTS
+./install_node_lts.sh
+
+# For nodejs stable
+./install_node_stable.sh
+```
+
 ## Installing/syncing environment
 
 ```bash
