@@ -20,7 +20,7 @@ var cli = meow({
   help: [
     'Usage: dotfiles install [<module>...]',
     '',
-    'where <module> is one or more of of:',
+    'where <module> is one or more of:',
     '    ' + allModules.join(', '),
     '',
     'Specify no <module> to install everything'
