@@ -9,11 +9,11 @@ My dotfiles for Linux and Windows.
 Node.js is the primary dependency, here are some helper scripts:
 
 ```bash
-# For nodejs LTS
-./install_node_lts.sh
-
 # For nodejs stable
-./install_node_stable.sh
+./install_node
+
+# For nodejs LTS
+./install_node lts
 ```
 
 ## Installing/syncing environment
