@@ -15,6 +15,7 @@ for CONFIG_DIR in "$CODE_INSIDER_CONFIG" \
                   "$CODE_DEV_CONFIG" \
                   "$CODE_OSS_CONFIG"
 do
+    mkdir -p "$CONFIG_DIR"
     for JSON_FILE in "settings.json" "keybindings.json"
     do
         rm -rf "$CONFIG_DIR/$JSON_FILE"
