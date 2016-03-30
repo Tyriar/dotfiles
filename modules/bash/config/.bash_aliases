@@ -33,6 +33,8 @@ alias wst='echo -e "\033[33m~~~git status on ~/dev~~~\033[0m"; for dir in $(ls ~
 # Quick alias for find in current directory
 alias f='find . -name'
 
+alias c='code-alpha'
+
 # Source .bash_aliases_local if it exists for .bash_aliases commands specific to this
 # machine.
 if [ -r ~/.bash_aliases_local ]; then
