@@ -1,4 +1,3 @@
-#!/usr/bin/env bash
 if [ -f /etc/debian_version ]; then
   if [ $1 = "lts" ]; then
     echo "Installing Node v4"
@@ -8,8 +7,6 @@ if [ -f /etc/debian_version ]; then
     curl -sL https://deb.nodesource.com/setup_5.x | sudo -E bash -
   fi
   sudo apt-get install -y nodejs
-  echo "Installing other deps"
-  sudo apt-get install -y curl git
 else
   echo "Only Debian is supported"
 fi
