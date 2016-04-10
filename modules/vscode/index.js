@@ -30,7 +30,7 @@ function installConfigFiles() {
   logHelper.logSubStepPartialStarted('installing config files');
   var sourceDir = path.join(__dirname, 'config');
   var files = fs.readdirSync(sourceDir);
-  symlinkOrReplaceFilesInFolderSync(files, sourceDir, getBaseDir());
+  symlinkOrReplaceFilesInFolderSync(files, sourceDir, getStableConfigDir());
   logHelper.logSubStepPartialSuccess();
 }
 
