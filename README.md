@@ -24,6 +24,12 @@ node cli.js install
 source ~/.bash_profile
 ```
 
+### On Ubuntu
+
+```bash
+./scripts/bootstrap.sh
+```
+
 ## Installing a single module
 
 ```bash
