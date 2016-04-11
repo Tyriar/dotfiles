@@ -19,7 +19,6 @@
   untracked = cyan
   branch = yellow black bold
 [user]
-  email = tyriar@tyriar.com
   name = Daniel Imms
 [push]
   default = upstream
