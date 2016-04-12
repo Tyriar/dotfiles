@@ -8,19 +8,19 @@ if [ -f /etc/debian_version ]; then
   sudo apt-get install -y libappindicator1
   sudo apt-get install -f
   pushd $(mktemp -d)
-  wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.  deb
+  wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
   sudo dpkg -i google-chrome-stable_current_amd64.deb
   popd
   
   # Install Visual Studio Code Stable
   pushd $(mktemp -d)
-  wget https://vscode-update.azurewebsites.net/api/deb/stable/amd64/deb/vscod  e-amd64.deb
+  wget https://vscode-update.azurewebsites.net/api/deb/stable/amd64/deb/vscode-amd64.deb
   sudo dpkg -i vscode-amd64.deb
   popd
   
   # Install Visual Studio Code Insiders
   pushd $(mktemp -d)
-  wget https://vscode-update.azurewebsites.net/api/deb/insider/amd64/deb/vsco  de-amd64.deb
+  wget https://vscode-update.azurewebsites.net/api/deb/insider/amd64/deb/vscode-amd64.deb
   sudo dpkg -i vscode-amd64.deb
   popd
   
@@ -31,7 +31,7 @@ if [ -f /etc/debian_version ]; then
   popd
   
   # Configure Unity Launcher
-  gsettings set com.canonical.Unity.Launcher favorites "['application://ubiquity.desktop',   'application://google-chrome.desktop',   'application://gnome-terminal.desktop',   'application://nautilus.desktop',   'application://code-insiders.desktop']"
+  gsettings set com.canonical.Unity.Launcher favorites "['application://ubiquity.desktop', 'application://google-chrome.desktop', 'application://gnome-terminal.desktop', 'application://nautilus.desktop', 'application://code-insiders.desktop']"
   
   # Install node stable
   $DIR/install_deps.sh
