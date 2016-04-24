@@ -10,6 +10,7 @@
 { "key": "alt+shift+-",     "command": "workbench.action.navigateForward" },
 { "key": "ctrl+,",          "command": "workbench.action.openGlobalSettings" },
 { "key": "alt+ctrl+p",      "command": "workbench.action.openRecent" },
+{ "key": "ctrl+`",          "command": "workbench.action.terminal.toggleTerminal" }
 { "key": "ctrl+shift+i",    "command": "workbench.action.toggleDevTools" },
 
 { "key": "ctrl+shift+w",    "command": "workbench.files.action.closeAllFiles" },
