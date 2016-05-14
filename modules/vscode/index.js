@@ -24,6 +24,7 @@ module.exports.install = function () {
   logHelper.logStepStarted('vscode');
   installConfigFiles();
   installSymlinksForVariants();
+  installExtensions();
 };
 
 function installConfigFiles() {
@@ -36,4 +37,8 @@ function installConfigFiles() {
 
 function installSymlinksForVariants() {
   execAndReportSync('setting up symlinks for variants', path.join(__dirname, 'symlink_variants.sh "' + getBaseDir() + '"'));
+}
+
+function installExtensions() {
+  execAndReportSync('installing extensions on code-alpha', path.join(__dirname, 'install_extensions.sh "' + getBaseDir() + '"'));
 }

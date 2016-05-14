@@ -22,4 +22,3 @@ do
         ln -s "$CODE_STABLE_CONFIG/$JSON_FILE" "$CONFIG_DIR/$JSON_FILE"
     done
 done
-
