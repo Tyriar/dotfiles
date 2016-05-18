@@ -8,6 +8,7 @@ do
                     "Tyriar.lorem-ipsum" \
                     "cssho.vscode-svgviewer" \
                     "dbaeumer.vscode-eslint" \
+                    "oderwat.indent-rainbow" \
                     "ms-vscode.csharp" \
                     "ryzngard.vscode-header-source" \
                     "waderyan.gitblame"
