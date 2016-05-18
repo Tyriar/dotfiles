@@ -3,14 +3,14 @@ for VARIANT in "code-alpha"
 do
   if hash $VARIANT 2>/dev/null; then
     echo "Installing extensions for $VARIANT"
-    for EXTENSION in "EditorConfig.EditorConfig" \
-                    "Tyriar.sort-lines" \
-                    "Tyriar.lorem-ipsum" \
-                    "cssho.vscode-svgviewer" \
+    for EXTENSION in "cssho.vscode-svgviewer" \
                     "dbaeumer.vscode-eslint" \
-                    "oderwat.indent-rainbow" \
+                    "EditorConfig.EditorConfig" \
                     "ms-vscode.csharp" \
                     "ryzngard.vscode-header-source" \
+                    "spywhere.guides" \
+                    "Tyriar.sort-lines" \
+                    "Tyriar.lorem-ipsum" \
                     "waderyan.gitblame"
     do
       $VARIANT --install-extension $EXTENSION
