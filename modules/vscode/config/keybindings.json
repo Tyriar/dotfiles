@@ -4,16 +4,14 @@
 { "key": "ctrl+shift+down", "command": "editor.action.moveLinesDownAction", "when": "editorTextFocus" },
 { "key": "ctrl+shift+up",   "command": "editor.action.moveLinesUpAction", "when": "editorTextFocus" },
 
+{ "key": "ctrl+shift+w",    "command": "workbench.action.closeAllEditors" },
 { "key": "ctrl+shift+o",    "command": "workbench.action.files.openFolder" },
 { "key": "ctrl+r",          "command": "workbench.action.gotoSymbol" },
 { "key": "alt+-",           "command": "workbench.action.navigateBack" },
 { "key": "alt+shift+-",     "command": "workbench.action.navigateForward" },
 { "key": "ctrl+,",          "command": "workbench.action.openGlobalSettings" },
 { "key": "alt+ctrl+p",      "command": "workbench.action.openRecent" },
-{ "key": "ctrl+`",          "command": "workbench.action.terminal.toggleTerminal" }
 { "key": "ctrl+shift+i",    "command": "workbench.action.toggleDevTools" },
 
-{ "key": "ctrl+shift+w",    "command": "workbench.files.action.closeAllFiles" },
-{ "key": "ctrl+w",          "command": "workbench.files.action.closeFile" },
 { "key": "ctrl+0",          "command": "workbench.files.action.showActiveFileInExplorer" },
 ]

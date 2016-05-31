@@ -20,5 +20,5 @@
   "integratedTerminal.ansiColors.brightMagenta": "#9b6ac4",
   "integratedTerminal.ansiColors.brightCyan": "#46a2c7",
   "integratedTerminal.ansiColors.brightWhite": "#eeeeec",
-  "integratedTerminal.fontFamily": "Hack",
+  "integratedTerminal.fontFamily": "Hack"
 }
