@@ -14,4 +14,5 @@
 { "key": "ctrl+shift+i",    "command": "workbench.action.toggleDevTools" },
 
 { "key": "ctrl+0",          "command": "workbench.files.action.showActiveFileInExplorer" },
+{ "key": "ctrl+shift+e",    "command": "workbench.files.action.focusFilesExplorer" }
 ]
