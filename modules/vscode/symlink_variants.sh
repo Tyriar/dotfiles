@@ -6,12 +6,10 @@ fi
 
 CODE_STABLE_CONFIG="$1/Code/User"
 CODE_INSIDER_CONFIG="$1/Code - Insiders/User"
-CODE_ALPHA_CONFIG="$1/Code - Alpha/User"
 CODE_DEV_CONFIG="$1/Code-Development/User"
 CODE_OSS_CONFIG="$1/Code - OSS/User"
 
 for CONFIG_DIR in "$CODE_INSIDER_CONFIG" \
-                  "$CODE_ALPHA_CONFIG" \
                   "$CODE_DEV_CONFIG" \
                   "$CODE_OSS_CONFIG"
 do

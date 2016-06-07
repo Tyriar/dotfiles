@@ -11,8 +11,7 @@ EXTENSIONS=(
 )
 
 for VARIANT in "code" \
-               "code-insiders" \
-               "code-alpha"
+               "code-insiders"
 do
   if hash $VARIANT 2>/dev/null; then
     VERSION="$($VARIANT --version)"
