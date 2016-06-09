@@ -1,6 +1,7 @@
 [
 { "key": "ctrl+shift+r",    "command": "editor.action.format", "when": "editorTextFocus" },
 { "key": "alt+shift+down",  "command": "editor.action.insertCursorBelow", "when": "editorTextFocus" },
+{ "key": "ctrl+m",          "command": "editor.action.jumpToBracket", "when": "editorTextFocus" },
 { "key": "ctrl+shift+down", "command": "editor.action.moveLinesDownAction", "when": "editorTextFocus" },
 { "key": "ctrl+shift+up",   "command": "editor.action.moveLinesUpAction", "when": "editorTextFocus" },
 
