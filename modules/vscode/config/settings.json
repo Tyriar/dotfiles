@@ -6,5 +6,6 @@
   "explorer.autoReveal": false,
   "editor.renderWhitespace": true,
   "workbench.showEditorTabs": true,
-  "explorer.openEditors.visible": 0
+  "explorer.openEditors.visible": 0,
+  "workbench.quickOpenPreviews": false
 }
