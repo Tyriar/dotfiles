@@ -16,7 +16,7 @@
 
 { "key": "ctrl+0",          "command": "workbench.files.action.showActiveFileInExplorer" },
 { "key": "ctrl+shift+e",    "command": "workbench.files.action.focusFilesExplorer" },
-{ "key": "ctrl+shift+x",    "command": "workbench.action.terminal.close" },
+{ "key": "ctrl+shift+x",    "command": "workbench.action.terminal.kill" },
 { "key": "ctrl+shift+j",    "command": "workbench.action.terminal.focusNext" },
 { "key": "ctrl+shift+k",    "command": "workbench.action.terminal.focusPrevious" }
 ]
