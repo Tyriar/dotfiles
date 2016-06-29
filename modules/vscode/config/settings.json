@@ -1,5 +1,6 @@
 {
   "editor.fontFamily": "Hack",
+  "editor.renderIndentGuides": true,
   "editor.renderWhitespace": true,
   "editor.roundedSelection": false,
   "editor.rulers": [ 80, 100, 120 ],
