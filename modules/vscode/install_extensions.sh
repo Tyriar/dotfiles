@@ -3,6 +3,7 @@ EXTENSIONS=(
   "cssho.vscode-svgviewer" \
   "dbaeumer.vscode-eslint" \
   "EditorConfig.EditorConfig" \
+  "RoscoP.ActiveFileInStatusBar" \
   "ryzngard.vscode-header-source" \
   "spywhere.guides" \
   "Tyriar.sort-lines" \
