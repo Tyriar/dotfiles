@@ -7,5 +7,7 @@
   "explorer.autoReveal": false,
   "explorer.openEditors.visible": 0,
   "workbench.editor.enablePreviewFromQuickOpen": false,
-  "workbench.editor.showTabs": true
+  "workbench.editor.showTabs": true,
+  
+  "ActiveFileInStatusBar.fullpath": false
 }
