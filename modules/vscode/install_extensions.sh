@@ -5,7 +5,6 @@ EXTENSIONS=(
   "EditorConfig.EditorConfig" \
   "RoscoP.ActiveFileInStatusBar" \
   "ryzngard.vscode-header-source" \
-  "spywhere.guides" \
   "Tyriar.sort-lines" \
   "Tyriar.lorem-ipsum" \
   "waderyan.gitblame"
