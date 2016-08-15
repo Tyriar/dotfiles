@@ -40,5 +40,5 @@ function installSymlinksForVariants() {
 }
 
 function installExtensions() {
-  execAndReportSync('installing extensions on code-alpha', path.join(__dirname, 'install_extensions.sh "' + getBaseDir() + '"'));
+  execAndReportSync('installing extensions', path.join(__dirname, 'install_extensions.sh "' + getBaseDir() + '"'));
 }
