@@ -8,6 +8,27 @@
   "explorer.openEditors.visible": 0,
   "workbench.editor.enablePreviewFromQuickOpen": false,
   "workbench.editor.showTabs": true,
-  
+  "terminal.integrated.commandsToSkipShell": [
+	  "editor.action.toggleTabFocusMode",
+	  "workbench.action.quickOpen",
+	  "workbench.action.showCommands",
+	  "workbench.action.terminal.copySelection",
+	  "workbench.action.terminal.focus",
+	  "workbench.action.terminal.focusNext",
+	  "workbench.action.terminal.focusPrevious",
+	  "workbench.action.terminal.kill",
+	  "workbench.action.terminal.new",
+	  "workbench.action.terminal.paste",
+	  "workbench.action.terminal.runSelectedText",
+	  "workbench.action.terminal.scrollDown",
+	  "workbench.action.terminal.scrollUp",
+	  "workbench.action.terminal.toggleTerminal",
+	  "workbench.action.debug.start",
+	  "workbench.action.debug.stop",
+	  "workbench.action.debug.run",
+	  "workbench.action.debug.restart",
+	  "workbench.action.debug.continue"
+  ],
+
   "ActiveFileInStatusBar.fullpath": false
 }
