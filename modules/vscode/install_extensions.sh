@@ -7,6 +7,7 @@ EXTENSIONS=(
   "ryzngard.vscode-header-source" \
   "Tyriar.sort-lines" \
   "Tyriar.lorem-ipsum" \
+  "Tyriar.theme-glacier" \
   "waderyan.gitblame"
 )
 
