@@ -10,6 +10,8 @@ function getBaseDir() {
   var baseDir = getHomePath();
   if (process.platform === 'win32') {
     baseDir = path.join(baseDir, 'AppData', 'Roaming');
+  } else if (process.platform === 'darwin') {
+    baseDir = path.join(baseDir, 'Library', "Application Support");
   } else {
     baseDir = path.join(baseDir, '.config');
   }
