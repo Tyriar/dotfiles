@@ -30,6 +30,7 @@
     "workbench.action.debug.restart",
     "workbench.action.debug.continue"
   ],
+  "editor.autoClosingBrackets": false,
 
   "ActiveFileInStatusBar.fullpath": false,
   "annotator.annotationColumnWidth": "18em"
