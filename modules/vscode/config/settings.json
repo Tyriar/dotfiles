@@ -31,5 +31,6 @@
     "workbench.action.debug.continue"
   ],
 
-  "ActiveFileInStatusBar.fullpath": false
+  "ActiveFileInStatusBar.fullpath": false,
+  "annotator.annotationColumnWidth": "18em"
 }

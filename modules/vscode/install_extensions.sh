@@ -4,11 +4,11 @@ EXTENSIONS=(
   "dbaeumer.vscode-eslint" \
   "EditorConfig.EditorConfig" \
   "RoscoP.ActiveFileInStatusBar" \
+  "ryu1kn.annotator" \
   "ryzngard.vscode-header-source" \
   "Tyriar.sort-lines" \
   "Tyriar.lorem-ipsum" \
-  "Tyriar.theme-glacier" \
-  "waderyan.gitblame"
+  "Tyriar.theme-glacier"
 )
 
 for VARIANT in "code" \
