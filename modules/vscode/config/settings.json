@@ -32,6 +32,11 @@
   ],
   "editor.autoClosingBrackets": false,
 
+  // Extensions
   "ActiveFileInStatusBar.fullpath": false,
-  "annotator.annotationColumnWidth": "18em"
+  "annotator.annotationColumnWidth": "18em",
+  "gitProjectManager.baseProjectsFolders": [
+    "/home/daniel/dev"
+  ],
+  "gitProjectManager.maxDepthRecursion": 2
 }
