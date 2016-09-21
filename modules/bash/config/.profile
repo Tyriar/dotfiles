@@ -22,12 +22,6 @@ fi
 mkdir -p $HOME/bin
 PATH="$HOME/bin:$PATH"
 
-NPM_PACKAGES=$HOME/.npm-packages
-mkdir -p $NPM_PACKAGES
-npm config set prefix $NPM_PACKAGES
-PATH=$NPM_PACKAGES/bin:$PATH
-NODE_PATH="$NPM_PACKAGES/lib/node_modules:$NODE_PATH"
-
 # Source .profile_local if it exists for .profile commands specific to this
 # machine.
 if [ -r ~/.profile_local ]; then
