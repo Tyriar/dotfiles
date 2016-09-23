@@ -32,7 +32,6 @@
   "workbench.editor.showTabs": true,
 
   // Extensions
-  "ActiveFileInStatusBar.fullpath": false,
   "annotator.annotationColumnWidth": "18em",
   "gitProjectManager.baseProjectsFolders": [
     "/home/daniel/dev"

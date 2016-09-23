@@ -4,7 +4,6 @@ EXTENSIONS=(
   "dbaeumer.vscode-eslint" \
   "EditorConfig.EditorConfig" \
   "felipecaputo.git-project-manager" \
-  "RoscoP.ActiveFileInStatusBar" \
   "ryu1kn.annotator" \
   "ryzngard.vscode-header-source" \
   "Tyriar.sort-lines" \
