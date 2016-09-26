@@ -5,7 +5,6 @@ EXTENSIONS=(
   "EditorConfig.EditorConfig" \
   "felipecaputo.git-project-manager" \
   "ryu1kn.annotator" \
-  "ryzngard.vscode-header-source" \
   "Tyriar.sort-lines" \
   "Tyriar.lorem-ipsum" \
   "Tyriar.theme-glacier"
