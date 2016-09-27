@@ -35,7 +35,8 @@
   // Extensions
   "annotator.annotationColumnWidth": "18em",
   "gitProjectManager.baseProjectsFolders": [
-    "/home/daniel/dev"
+    "$HOME/dev",
+    "%USERPROFILE%\\Documents\\dev"
   ],
   "gitProjectManager.maxDepthRecursion": 2
 }
