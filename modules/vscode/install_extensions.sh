@@ -1,12 +1,11 @@
 # Install extensions for variants supporting --install-extension
 EXTENSIONS=(
   "cssho.vscode-svgviewer" \
-  "dbaeumer.vscode-eslint" \
   "EditorConfig.EditorConfig" \
   "felipecaputo.git-project-manager" \
   "ryu1kn.annotator" \
-  "Tyriar.sort-lines" \
   "Tyriar.lorem-ipsum" \
+  "Tyriar.terminal-tabs" \
   "Tyriar.theme-glacier"
 )
 
