@@ -3,6 +3,7 @@ EXTENSIONS=(
   "cssho.vscode-svgviewer" \
   "EditorConfig.EditorConfig" \
   "felipecaputo.git-project-manager" \
+  "jrieken.md-navigate" \
   "mrmlnc.vscode-scss" \
   "ryu1kn.annotator" \
   "Tyriar.lorem-ipsum" \
