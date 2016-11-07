@@ -12,6 +12,7 @@
 { "key": "alt+shift+-",     "command": "workbench.action.navigateForward" },
 { "key": "ctrl+,",          "command": "workbench.action.openGlobalSettings" },
 { "key": "ctrl+shift+i",    "command": "workbench.action.toggleDevTools" },
+{ "key": "ctrl+shift+q",    "command": "workbench.action.toggleMaximizedPanel" },
 
 { "key": "ctrl+0",          "command": "workbench.files.action.showActiveFileInExplorer" },
 { "key": "ctrl+shift+e",    "command": "workbench.files.action.focusFilesExplorer" },
