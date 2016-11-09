@@ -6,6 +6,17 @@ var path = require('path');
 var process = require('process');
 var symlinkOrReplaceFilesInFolderSync = require('../../util/symlink-or-replace-files-in-folder-sync');
 
+var extensions = [
+  "cssho.vscode-svgviewer",
+  "EditorConfig.EditorConfig",
+  "felipecaputo.git-project-manager",
+  "jrieken.md-navigate",
+  "mrmlnc.vscode-scss",
+  "Tyriar.lorem-ipsum",
+  "Tyriar.terminal-tabs",
+  "Tyriar.theme-glacier"
+];
+
 function getBaseDir() {
   var baseDir = getHomePath();
   if (process.platform === 'win32') {
@@ -42,5 +53,9 @@ function installSymlinksForVariants() {
 }
 
 function installExtensions() {
-  execAndReportSync('installing extensions', path.join(__dirname, 'install_extensions.sh "' + getBaseDir() + '"'));
+  extensions.forEach(installExtension);
+}
+
+function installExtension(name) {
+  execAndReportSync('installing ' + name, 'code-insiders --install-extension ' + name);
 }
