@@ -6,7 +6,6 @@ var meow = require('meow');
 var process = require('process');
 
 var allModules = [
-  'atom',
   'bash',
   'bin',
   'fonts',
