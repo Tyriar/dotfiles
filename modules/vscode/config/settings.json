@@ -12,7 +12,6 @@
   "workbench.editor.showTabs": true,
 
   // Extensions
-  "annotator.annotationColumnWidth": "18em",
   "gitProjectManager.baseProjectsFolders": [
     "$HOME/dev",
     "%USERPROFILE%\\Documents\\dev"

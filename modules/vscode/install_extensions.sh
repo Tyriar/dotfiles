@@ -5,7 +5,6 @@ EXTENSIONS=(
   "felipecaputo.git-project-manager" \
   "jrieken.md-navigate" \
   "mrmlnc.vscode-scss" \
-  "ryu1kn.annotator" \
   "Tyriar.lorem-ipsum" \
   "Tyriar.terminal-tabs" \
   "Tyriar.theme-glacier"
