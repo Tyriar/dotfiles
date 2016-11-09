@@ -36,7 +36,6 @@ function getStableConfigDir() {
 module.exports.install = function () {
   logHelper.logStepStarted('vscode');
   installConfigFiles();
-  installSymlinksForVariants();
   installExtensions();
 };
 
@@ -46,10 +45,6 @@ function installConfigFiles() {
   var files = fs.readdirSync(sourceDir);
   symlinkOrReplaceFilesInFolderSync(files, sourceDir, getStableConfigDir());
   logHelper.logSubStepPartialSuccess();
-}
-
-function installSymlinksForVariants() {
-  execAndReportSync('setting up symlinks for variants', path.join(__dirname, 'symlink_variants.sh "' + getBaseDir() + '"'));
 }
 
 function installExtensions() {
