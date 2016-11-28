@@ -21,5 +21,7 @@
 { "key": "ctrl+shift+j",    "command": "workbench.action.terminal.focusNext" },
 { "key": "ctrl+shift+k",    "command": "workbench.action.terminal.focusPrevious" },
 
-{ "key": "ctrl+w",          "command": "-workbench.action.closeWindow", "when": "!editorIsOpen" }
+{ "key": "ctrl+w",          "command": "-workbench.action.closeWindow", "when": "!editorIsOpen" },
+
+{ "key": "ctrl+alt+o",      "command": "gitProjectManager.openProject" }
 ]
