@@ -9,7 +9,6 @@
   "explorer.openEditors.visible": 0,
   "extensions.autoUpdate": true,
   "workbench.editor.enablePreviewFromQuickOpen": false,
-  "workbench.editor.showTabs": true,
 
   // Extensions
   "gitProjectManager.baseProjectsFolders": [
