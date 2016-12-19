@@ -14,7 +14,8 @@ var extensions = [
   "mrmlnc.vscode-scss",
   "Tyriar.lorem-ipsum",
   "Tyriar.terminal-tabs",
-  "Tyriar.theme-glacier"
+  "Tyriar.theme-glacier",
+  "qinjia.seti-icons"
 ];
 
 function getBaseDir() {
