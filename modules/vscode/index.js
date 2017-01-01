@@ -30,8 +30,8 @@ function getBaseDir() {
   return baseDir;
 }
 
-function getStableConfigDir() {
-  return path.join(getBaseDir(), 'Code', 'User');
+function getConfigDir() {
+  return path.join(getBaseDir(), 'Code - Insiders', 'User');
 }
 
 module.exports.install = function () {
@@ -44,7 +44,7 @@ function installConfigFiles() {
   logHelper.logSubStepPartialStarted('installing config files');
   var sourceDir = path.join(__dirname, 'config');
   var files = fs.readdirSync(sourceDir);
-  symlinkOrReplaceFilesInFolderSync(files, sourceDir, getStableConfigDir());
+  symlinkOrReplaceFilesInFolderSync(files, sourceDir, getConfigDir());
   logHelper.logSubStepPartialSuccess();
 }
 
