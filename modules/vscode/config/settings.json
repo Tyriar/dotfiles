@@ -9,6 +9,7 @@
   "explorer.openEditors.visible": 0,
   "extensions.autoUpdate": true,
   "workbench.editor.enablePreviewFromQuickOpen": false,
+  "terminal.integrated.shell.windows": "C:\\Windows\\sysnative\\WindowsPowerShell\\v1.0\\powershell.exe",
 
   // Extensions
   "gitProjectManager.baseProjectsFolders": [
