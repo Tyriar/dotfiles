@@ -12,6 +12,7 @@
   "terminal.integrated.shell.windows": "C:\\Windows\\sysnative\\WindowsPowerShell\\v1.0\\powershell.exe",
 
   // Extensions
+  "gitlens.codeLens.visibility": "off",
   "gitProjectManager.baseProjectsFolders": [
     "$HOME/dev",
     "%USERPROFILE%\\Documents\\dev"
