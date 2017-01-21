@@ -10,6 +10,9 @@
   "extensions.autoUpdate": true,
   "workbench.editor.enablePreviewFromQuickOpen": false,
   "terminal.integrated.shell.windows": "C:\\Windows\\sysnative\\WindowsPowerShell\\v1.0\\powershell.exe",
+  "editor.folding": false,
+  "window.showFullPath": true,
+  "files.hotExit": "onExitAndWindowClose",
 
   // Extensions
   "gitlens.codeLens.visibility": "off",
