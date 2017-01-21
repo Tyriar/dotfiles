@@ -14,6 +14,10 @@
   "window.showFullPath": true,
   "files.hotExit": "onExitAndWindowClose",
 
+  // Languages
+  "typescript.check.tscVersion": false,
+  "typescript.check.workspaceVersion": false,
+
   // Extensions
   "gitlens.codeLens.visibility": "off",
   "gitProjectManager.baseProjectsFolders": [
