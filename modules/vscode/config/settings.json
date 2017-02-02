@@ -24,6 +24,9 @@
   // Languages
   "typescript.check.tscVersion": false,
   "typescript.check.workspaceVersion": false,
+  "[markdown]": {
+    "editor.quickSuggestions": false
+  },
 
   // Extensions
   "gitlens.codeLens.visibility": "off",
