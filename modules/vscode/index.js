@@ -15,6 +15,7 @@ var extensions = [
   "mrmlnc.vscode-scss",
   "Tyriar.lorem-ipsum",
   "Tyriar.theme-glacier",
+  "Tyriar.theme-sapphire",
   "qinjia.seti-icons"
 ];
 
