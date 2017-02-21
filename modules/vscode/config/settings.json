@@ -22,6 +22,10 @@
 
   "workbench.editor.enablePreviewFromQuickOpen": false,
 
+  // Themes
+  "workbench.colorTheme": "Sapphire",
+  "workbench.iconTheme": "seti",
+
   // Languages
   "typescript.check.tscVersion": false,
   "[markdown]": {
