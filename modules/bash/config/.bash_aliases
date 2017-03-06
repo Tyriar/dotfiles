@@ -40,3 +40,5 @@ alias c='code-insiders'
 if [ -r ~/.bash_aliases_local ]; then
   . ~/.bash_aliases_local
 fi
+
+alias up='sudo apt update && sudo apt install code-insiders'
