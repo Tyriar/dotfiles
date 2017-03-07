@@ -13,7 +13,6 @@ var extensions = [
   "jrieken.md-navigate",
   "mrmlnc.vscode-scss",
   "Tyriar.lorem-ipsum",
-  "Tyriar.theme-glacier",
   "Tyriar.theme-sapphire",
   "qinjia.seti-icons",
   "eg2.tslint"
