@@ -5,7 +5,10 @@ if [ -f /etc/debian_version ]; then
 
   echo -e '\e[34;47mInstalling prerequisites, update and upgrade apt\e[0m'
   sudo apt update
-  sudo apt install vim git curl
+  sudo apt install vim
+  sudo apt install git
+  sudo apt install curl
+  sudo apt install gimp
   sudo apt -f upgrade
 
   # Install NodeJS
