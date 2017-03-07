@@ -16,7 +16,8 @@ var extensions = [
   "Tyriar.lorem-ipsum",
   "Tyriar.theme-glacier",
   "Tyriar.theme-sapphire",
-  "qinjia.seti-icons"
+  "qinjia.seti-icons",
+  "eg2.tslint"
 ];
 
 function getBaseDir() {
