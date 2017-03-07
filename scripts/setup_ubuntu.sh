@@ -9,6 +9,7 @@ if [ -f /etc/debian_version ]; then
   sudo apt install git
   sudo apt install curl
   sudo apt install gimp
+  sudo apt install tmux
   sudo apt -f upgrade
 
   # Install NodeJS
