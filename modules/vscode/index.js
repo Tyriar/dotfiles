@@ -8,7 +8,6 @@ var symlinkOrReplaceFilesInFolderSync = require('../../util/symlink-or-replace-f
 
 var extensions = [
   "cssho.vscode-svgviewer",
-  "eamodio.gitlens",
   "EditorConfig.EditorConfig",
   "felipecaputo.git-project-manager",
   "jrieken.md-navigate",
