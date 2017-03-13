@@ -4,6 +4,7 @@
   "editor.fontFamily": "Hack",
   "editor.minimap.enabled": true,
   "editor.minimap.renderCharacters": false,
+  "editor.renderControlCharacters": true,
   "editor.renderIndentGuides": true,
   "editor.renderWhitespace": "boundary",
   "editor.roundedSelection": false,
