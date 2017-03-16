@@ -5,7 +5,8 @@
 { "key": "ctrl+m",          "command": "editor.action.jumpToBracket", "when": "editorTextFocus" },
 { "key": "ctrl+shift+down", "command": "editor.action.moveLinesDownAction", "when": "editorTextFocus" },
 { "key": "ctrl+shift+up",   "command": "editor.action.moveLinesUpAction", "when": "editorTextFocus" },
-
+{ "key": "alt+enter",       "command": "editor.action.quickFix", "when": "editorHasCodeActionsProvider && editorTextFocus && !editorReadonly" },
+  
 { "key": "ctrl+shift+w",    "command": "workbench.action.closeAllEditors" },
 { "key": "ctrl+shift+o",    "command": "workbench.action.files.openFolder" },
 { "key": "ctrl+r",          "command": "workbench.action.gotoSymbol" },
