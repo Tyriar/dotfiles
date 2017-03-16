@@ -26,7 +26,10 @@
 { "key": "ctrl+shift+c",    "command": "workbench.action.terminal.copySelection", "when": "terminalFocus && terminalTextSelected" },
 { "key": "ctrl+shift+v",    "command": "workbench.action.terminal.paste", "when": "terminalFocus" },
 
+// Don't close when ctrl+w with no files open
 { "key": "ctrl+w",          "command": "-workbench.action.closeWindow", "when": "!editorIsOpen" },
+// This conflicts with a bash keybinding
+{ "key": "ctrl+e",          "command": "-workbench.action.quickOpen" },
 
 { "key": "ctrl+alt+o",      "command": "gitProjectManager.openProject" }
 ]
