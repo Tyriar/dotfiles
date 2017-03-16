@@ -26,8 +26,8 @@
 { "key": "ctrl+shift+c",    "command": "workbench.action.terminal.copySelection", "when": "terminalFocus && terminalTextSelected" },
 { "key": "ctrl+shift+v",    "command": "workbench.action.terminal.paste", "when": "terminalFocus" },
 // Make the explorer act more like OS file explorer
-{ "key": "ctrl+n",          "command": "explorer.newFile", "when": "explorerViewletFocus && explorerViewletVisible" },
-{ "key": "ctrl+shift+n",    "command": "explorer.newFolder", "when": "explorerViewletFocus && explorerViewletVisible" },
+{ "key": "ctrl+n",          "command": "explorer.newFile", "when": "explorerViewletVisible && filesExplorerFocus" },
+{ "key": "ctrl+shift+n",    "command": "explorer.newFolder", "when": "explorerViewletVisible && filesExplorerFocus" },
 
 // Don't close when ctrl+w with no files open
 { "key": "ctrl+w",          "command": "-workbench.action.closeWindow", "when": "!editorIsOpen" },
