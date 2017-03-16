@@ -19,12 +19,15 @@
 { "key": "ctrl+0",          "command": "workbench.files.action.showActiveFileInExplorer" },
 { "key": "ctrl+shift+e",    "command": "workbench.files.action.focusFilesExplorer" },
 { "key": "ctrl+shift+x",    "command": "workbench.action.terminal.kill" },
-{ "key": "ctrl+`",          "command": "workbench.action.terminal.focus", "when": "!terminalFocus" }
+{ "key": "ctrl+`",          "command": "workbench.action.terminal.focus", "when": "!terminalFocus" },
 { "key": "ctrl+shift+j",    "command": "workbench.action.terminal.focusNext" },
 { "key": "ctrl+shift+k",    "command": "workbench.action.terminal.focusPrevious" },
 // Make Windows copy/paste behave the same as Linux
 { "key": "ctrl+shift+c",    "command": "workbench.action.terminal.copySelection", "when": "terminalFocus && terminalTextSelected" },
 { "key": "ctrl+shift+v",    "command": "workbench.action.terminal.paste", "when": "terminalFocus" },
+// Make the explorer act more like OS file explorer
+{ "key": "ctrl+n",          "command": "explorer.newFile", "when": "explorerViewletFocus && explorerViewletVisible" },
+{ "key": "ctrl+shift+n",    "command": "explorer.newFolder", "when": "explorerViewletFocus && explorerViewletVisible" },
 
 // Don't close when ctrl+w with no files open
 { "key": "ctrl+w",          "command": "-workbench.action.closeWindow", "when": "!editorIsOpen" },
