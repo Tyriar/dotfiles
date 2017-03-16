@@ -41,6 +41,5 @@
     "$HOME/dev",
     "%USERPROFILE%\\Documents\\dev"
   ],
-  "gitProjectManager.maxDepthRecursion": 2,
-  "gitProjectManager.openInNewWindow": true
+  "gitProjectManager.maxDepthRecursion": 2
 }
