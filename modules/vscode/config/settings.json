@@ -15,6 +15,7 @@
 
   "extensions.autoUpdate": true,
 
+  "files.defaultLanguage": "markdown",
   "files.hotExit": "onExitAndWindowClose",
 
   "terminal.integrated.cursorBlinking": true,
