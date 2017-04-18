@@ -55,6 +55,12 @@ if ! shopt -oq posix; then
   fi
 fi
 
+# Reduce Razer DeathAdder sensitivity if present
+if xinput list | grep -q "DeathAdder"; then
+  SPEED=0.66
+  xinput set-prop "pointer:Razer Razer DeathAdder" "Coordinate Transformation Matrix" $SPEED, 0, 0, 0, $SPEED, 0, 0, 0, 1
+fi
+
 # Source .bash_prompt if it exists
 if [ -r ~/.bash_prompt ]; then
   . ~/.bash_prompt
