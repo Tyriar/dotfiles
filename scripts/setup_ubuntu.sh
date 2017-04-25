@@ -5,11 +5,11 @@ if [ -f /etc/debian_version ]; then
 
   echo -e '\e[34;47mInstalling prerequisites, update and upgrade apt\e[0m'
   sudo apt update
-  sudo apt install vim
-  sudo apt install git
-  sudo apt install curl
-  sudo apt install gimp
-  sudo apt install tmux
+  sudo apt install -y vim
+  sudo apt install -y git
+  sudo apt install -y curl
+  sudo apt install -y gimp
+  sudo apt install -y tmux 
   sudo apt -f upgrade
 
   # Install NodeJS
