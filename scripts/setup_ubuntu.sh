@@ -36,7 +36,7 @@ if [ -f /etc/debian_version ]; then
 
   # Configure Ubuntu
   echo -e '\e[34;47mConfiguring Ubuntu\e[0m'
-  gsettings set com.canonical.Unity.Launcher favorites "['application://ubiquity.desktop', 'application://google-chrome.desktop', 'application://gnome-terminal.desktop', 'application://org.gnome.Nautilus.desktop', 'application://code-insiders.desktop', 'application://slack.desktop', 'application://update-manager.desktop']"
+  gsettings set com.canonical.Unity.Launcher favorites "['application://ubiquity.desktop', 'application://google-chrome.desktop', 'application://org.gnome.Terminal.desktop', 'application://org.gnome.Nautilus.desktop', 'application://code-insiders.desktop', 'application://slack.desktop', 'application://update-manager.desktop']"
   gsettings set com.canonical.Unity.Launcher launcher-position "Bottom"
 
   # Install dotfiles
