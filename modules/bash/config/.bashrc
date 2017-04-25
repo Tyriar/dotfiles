@@ -61,6 +61,13 @@ if xinput list | grep -q "DeathAdder"; then
   xinput set-prop "pointer:Razer Razer DeathAdder" "Coordinate Transformation Matrix" $SPEED, 0, 0, 0, $SPEED, 0, 0, 0, 1
 fi
 
+# Set up node/npm
+NPM_PACKAGES=$HOME/.npm-packages
+mkdir -p $NPM_PACKAGES
+npm config set prefix $NPM_PACKAGES
+PATH=$NPM_PACKAGES/bin:$PATH
+NODE_PATH="$NPM_PACKAGES/lib/node_modules:$NODE_PATH"
+
 # Source .bash_prompt if it exists
 if [ -r ~/.bash_prompt ]; then
   . ~/.bash_prompt
