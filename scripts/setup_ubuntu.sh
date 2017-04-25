@@ -9,7 +9,7 @@ if [ -f /etc/debian_version ]; then
   sudo apt install -y git
   sudo apt install -y curl
   sudo apt install -y gimp
-  sudo apt install -y tmux 
+  sudo apt install -y tmux
   sudo apt -f upgrade
 
   # Install NodeJS
@@ -43,6 +43,10 @@ if [ -f /etc/debian_version ]; then
   echo -e '\e[34;47mInstalling dotfiles\e[0m'
   npm install
   node $DIR/../cli.js install
+
+  # Install development packages
+  echo -e '\e[34;47mInstalling development packages\e[0m'
+  sudo apt-get install -y libx11-dev libxkbfile-dev fakeroot rpm # Microsoft/vscode
 
   # Clean up
   echo -e '\e[34;47mCleaning up\e[0m'
