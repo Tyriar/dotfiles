@@ -37,8 +37,8 @@ if [ -f /etc/debian_version ]; then
   # Install arc theme and icon theme
   echo -e '\e[34;47mInstalling arc theme and icon theme\e[0m'
   sudo apt update
-  sudo apt install arc-theme
-  sudo apt install unity-tweak-tool
+  sudo apt install -y arc-theme
+  sudo apt install -y unity-tweak-tool
   wget -O $DIR/temp/arc-icon-theme.tar.gz "https://github.com/horst3180/arc-icon-theme/archive/20161122.tar.gz"
   mkdir -p $DIR/temp/arc-icon-theme
   tar -xf $DIR/temp/arc-icon-theme.tar.gz -C $DIR/temp/arc-icon-theme
