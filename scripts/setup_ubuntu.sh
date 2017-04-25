@@ -44,9 +44,17 @@ if [ -f /etc/debian_version ]; then
   npm install
   node $DIR/../cli.js install
 
+  # Sourcing ~/.bashrc
+  echo -e '\e[34;47mSourcing ~/.bashrc\e[0m'
+  source ~/.bashrc
+
   # Install development packages
   echo -e '\e[34;47mInstalling development packages\e[0m'
   sudo apt-get install -y libx11-dev libxkbfile-dev fakeroot rpm # Microsoft/vscode
+
+  # Install global npm packages
+  echo -e '\e[34;47mInstalling global npm packages\e[0m'
+  npm i -g fkill
 
   # Clean up
   echo -e '\e[34;47mCleaning up\e[0m'
