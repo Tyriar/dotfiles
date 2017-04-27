@@ -55,12 +55,6 @@ if ! shopt -oq posix; then
   fi
 fi
 
-# Reduce Razer DeathAdder sensitivity if present
-if xinput list | grep -q "DeathAdder"; then
-  SPEED=0.66
-  xinput set-prop "pointer:Razer Razer DeathAdder" "Coordinate Transformation Matrix" $SPEED, 0, 0, 0, $SPEED, 0, 0, 0, 1
-fi
-
 # Set up node/npm
 NPM_PACKAGES=$HOME/.npm-packages
 mkdir -p $NPM_PACKAGES
