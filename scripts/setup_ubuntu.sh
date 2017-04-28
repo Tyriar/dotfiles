@@ -54,7 +54,7 @@ if [ -f /etc/debian_version ]; then
 
   # Install global npm packages
   echo -e '\e[34;47mInstalling global npm packages\e[0m'
-  npm i -g fkill
+  npm i -g fkill yo generator-code grunt gulp
 
   # Clean up
   echo -e '\e[34;47mCleaning up\e[0m'
