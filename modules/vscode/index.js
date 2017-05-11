@@ -7,6 +7,7 @@ var process = require('process');
 var symlinkOrReplaceFilesInFolderSync = require('../../util/symlink-or-replace-files-in-folder-sync');
 
 var extensions = [
+  "bierner.emojisense",
   "cssho.vscode-svgviewer",
   "EditorConfig.EditorConfig",
   "felipecaputo.git-project-manager",
