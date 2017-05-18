@@ -15,6 +15,7 @@
   "explorer.openEditors.visible": 0,
 
   "extensions.autoUpdate": true,
+  "extensions.ignoreRecommendations": true,
 
   "files.defaultLanguage": "markdown",
   "files.hotExit": "onExitAndWindowClose",
