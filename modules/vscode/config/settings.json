@@ -28,6 +28,7 @@
   "window.title": "${rootPath}${separator}${activeEditorName}${separator}${appName}",
 
   "workbench.editor.enablePreviewFromQuickOpen": false,
+  "workbench.welcome.enabled": false,
 
   // Themes
   "workbench.colorTheme": "Sapphire",
