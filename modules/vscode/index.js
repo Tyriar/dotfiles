@@ -11,7 +11,6 @@ var extensions = [
   "cssho.vscode-svgviewer",
   "EditorConfig.EditorConfig",
   "felipecaputo.git-project-manager",
-  "jrieken.md-navigate",
   "mrmlnc.vscode-scss",
   "Tyriar.lorem-ipsum",
   "Tyriar.theme-sapphire",
