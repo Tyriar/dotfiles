@@ -3,6 +3,7 @@
   "editor.codeLens": false,
   "editor.folding": false,
   "editor.fontFamily": "Hack",
+  "editor.formatOnPaste": false,
   "editor.minimap.enabled": true,
   "editor.minimap.renderCharacters": false,
   "editor.renderControlCharacters": true,
