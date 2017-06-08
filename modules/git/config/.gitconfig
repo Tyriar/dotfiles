@@ -26,6 +26,7 @@
   helper = cache --timeout=7200
 [core]
   editor = vim
+	autocrlf = false
 [alias]
   authors = shortlog -s -n .
   co = checkout
