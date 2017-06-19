@@ -33,7 +33,13 @@ if [ -f /etc/debian_version ]; then
   sudo sh -c 'echo "deb [arch=amd64] http://packages.microsoft.com/repos/vscode stable main" > /etc/apt/sources.list.d/vscode.list'
   sudo apt update
   sudo apt install code code-insiders
-
+  
+  # Install peek
+  # sudo apt-get install software-properties-common python-software-properties
+  sudo add-apt-repository ppa:peek-developers/stable
+  sudo apt update
+  sudo apt install peek
+  
   # Configure Ubuntu
   echo -e '\e[34;47mConfiguring Ubuntu\e[0m'
   gsettings set com.canonical.Unity.Launcher favorites "['application://ubiquity.desktop', 'application://google-chrome.desktop', 'application://org.gnome.Terminal.desktop', 'application://org.gnome.Nautilus.desktop', 'application://code-insiders.desktop', 'application://slack.desktop', 'application://update-manager.desktop']"
