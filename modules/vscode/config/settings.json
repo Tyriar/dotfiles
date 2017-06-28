@@ -1,6 +1,5 @@
 {
   "editor.autoClosingBrackets": false,
-  "editor.autoIndent": true,
   "editor.codeLens": false,
   "editor.folding": false,
   "editor.fontFamily": "Hack",
@@ -21,20 +20,19 @@
 
   "files.defaultLanguage": "markdown",
   "files.hotExit": "onExitAndWindowClose",
+  "files.useExperimentalFileWatcher": true,
 
   "terminal.integrated.cursorBlinking": true,
   "terminal.integrated.scrollback": 5000,
   "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
 
-  "window.reopenFolders": "all",
+  "window.restoreWindows": "all",
   "window.title": "${rootPath}${separator}${activeEditorName}${separator}${appName}",
 
-  "workbench.editor.enablePreviewFromQuickOpen": false,
-  "workbench.welcome.enabled": false,
-
-  // Themes
   "workbench.colorTheme": "Sapphire",
+  "workbench.editor.enablePreviewFromQuickOpen": false,
   "workbench.iconTheme": "seti",
+  "workbench.startupEditor": "none",
 
   // Languages
   "typescript.check.tscVersion": false,
