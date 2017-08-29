@@ -7,12 +7,9 @@ var process = require('process');
 var symlinkOrReplaceFilesInFolderSync = require('../../util/symlink-or-replace-files-in-folder-sync');
 
 var extensions = [
-  "bierner.emojisense",
   "cssho.vscode-svgviewer",
   "EditorConfig.EditorConfig",
   "felipecaputo.git-project-manager",
-  "mrmlnc.vscode-scss",
-  "Tyriar.lorem-ipsum",
   "Tyriar.theme-sapphire",
   "qinjia.seti-icons",
   "eg2.tslint"
