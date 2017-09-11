@@ -37,7 +37,7 @@
 // This conflicts with a bash keybinding
 { "key": "ctrl+e",          "command": "-workbench.action.quickOpen" },
 // Unbind since it's rebound
-{ "key": "ctrl+.",          "command": "-editor.action.quickFix", "when": "editorHasCodeActionsProvider && editorTextFocus && !editorReadonly" }
+{ "key": "ctrl+.",          "command": "-editor.action.quickFix", "when": "editorHasCodeActionsProvider && editorTextFocus && !editorReadonly" },
 
 // Extensions
 { "key": "ctrl+alt+o",      "command": "gitProjectManager.openProject" },
