@@ -56,11 +56,11 @@ if ! shopt -oq posix; then
 fi
 
 # Set up node/npm
-NPM_PACKAGES=$HOME/.npm-packages
-mkdir -p $NPM_PACKAGES
-npm config set prefix $NPM_PACKAGES
-PATH=$NPM_PACKAGES/bin:$PATH
-NODE_PATH="$NPM_PACKAGES/lib/node_modules:$NODE_PATH"
+# NPM_PACKAGES=$HOME/.npm-packages
+# mkdir -p $NPM_PACKAGES
+# npm config set prefix $NPM_PACKAGES
+# PATH=$NPM_PACKAGES/bin:$PATH
+# NODE_PATH="$NPM_PACKAGES/lib/node_modules:$NODE_PATH"
 
 # Source .bash_prompt if it exists
 if [ -r ~/.bash_prompt ]; then
@@ -72,3 +72,8 @@ fi
 if [ -r ~/.bashrc_local ]; then
   . ~/.bashrc_local
 fi
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+nvm use 7.2 > /dev/null 2>&1
