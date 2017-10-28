@@ -11,6 +11,7 @@
   "editor.renderWhitespace": "boundary",
   "editor.roundedSelection": false,
   "editor.rulers": [ 80, 100, 120 ],
+  "editor.smoothScrolling": false,
 
   "explorer.autoReveal": false,
   "explorer.openEditors.visible": 0,
@@ -35,7 +36,7 @@
   "workbench.startupEditor": "none",
 
   // Languages
-  "typescript.check.tscVersion": false,
+  "markdown.preview.scrollEditorWithPreview": false,
   "[markdown]": {
     "editor.quickSuggestions": false
   },
