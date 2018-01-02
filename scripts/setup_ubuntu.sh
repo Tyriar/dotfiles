@@ -47,7 +47,7 @@ if [ -f /etc/debian_version ]; then
 
   # Install nvm
   curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.5/install.sh | bash
-  nvm install 7.2
+  nvm install 8
 
   # Install dotfiles
   echo -e '\e[34;47mInstalling dotfiles\e[0m'
