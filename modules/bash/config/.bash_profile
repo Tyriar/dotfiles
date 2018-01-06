@@ -24,3 +24,7 @@ fi
 if [ -r ~/.bash_profile_local ]; then
   . ~/.bash_profile_local
 fi
+
+if [ -d ~/.cargo ]; then
+  export PATH="$HOME/.cargo/bin:$PATH"
+fi
