@@ -66,6 +66,16 @@ if [ -r ~/.bashrc_local ]; then
   . ~/.bashrc_local
 fi
 
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+# Defer initialization of nvm until nvm, node or npm are run
+if [ -s "$HOME/.nvm/nvm.sh" ]; then
+  export NVM_DIR="$HOME/.nvm"
+  [ -s "$NVM_DIR/bash_completion" ] && . "$NVM_DIR/bash_completion"
+  function __init_nvm() {
+    unalias nvm node npm
+    . "$NVM_DIR"/nvm.sh
+    unset -f __init_nvm
+  }
+  alias nvm='__init_nvm && nvm'
+  alias node='__init_nvm && node'
+  alias npm='__init_nvm && npm'
+fi
