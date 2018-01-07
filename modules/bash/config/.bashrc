@@ -70,12 +70,8 @@ fi
 if [ -s "$HOME/.nvm/nvm.sh" ]; then
   export NVM_DIR="$HOME/.nvm"
   [ -s "$NVM_DIR/bash_completion" ] && . "$NVM_DIR/bash_completion"
-  function __init_nvm() {
-    unalias nvm node npm
-    . "$NVM_DIR"/nvm.sh
-    unset -f __init_nvm
-  }
-  alias nvm='__init_nvm && nvm'
-  alias node='__init_nvm && node'
-  alias npm='__init_nvm && npm'
+  alias nvm='unalias nvm node npm yarn && . "$NVM_DIR"/nvm.sh && nvm'
+  alias node='unalias nvm node npm yarn && . "$NVM_DIR"/nvm.sh && node'
+  alias npm='unalias nvm node npm yarn && . "$NVM_DIR"/nvm.sh && npm'
+  alias yarn='unalias nvm node npm yarn && . "$NVM_DIR"/nvm.sh && yarn'
 fi
