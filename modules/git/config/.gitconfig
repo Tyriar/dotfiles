@@ -36,3 +36,5 @@
   st = status
   up = branch -u
   upo = branch -u origin/master
+[hub]
+  protocol = https
