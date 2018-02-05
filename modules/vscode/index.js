@@ -12,7 +12,8 @@ var extensions = [
   "felipecaputo.git-project-manager",
   "Tyriar.theme-sapphire",
   "qinjia.seti-icons",
-  "eg2.tslint"
+  "eg2.tslint",
+  "eg2.vscode-npm-script"
 ];
 
 function getBaseDir() {
