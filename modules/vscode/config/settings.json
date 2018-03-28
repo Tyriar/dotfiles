@@ -45,5 +45,6 @@
     "$HOME/dev",
     "%USERPROFILE%\\Documents\\dev"
   ],
-  "gitProjectManager.maxDepthRecursion": 2
+  "gitProjectManager.maxDepthRecursion": 2,
+  "material-icon-theme.showWelcomeMessage": false
 }
