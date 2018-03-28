@@ -14,6 +14,8 @@
 { "key": "alt+-",           "command": "workbench.action.navigateBack" },
 { "key": "alt+shift+-",     "command": "workbench.action.navigateForward" },
 { "key": "ctrl+,",          "command": "workbench.action.openGlobalSettings" },
+{ "key": "ctrl+k ctrl+s",   "command": "workbench.action.openGlobalKeybindingsFile" },
+{ "key": "cmd+k cmd+s",     "command": "workbench.action.openGlobalKeybindingsFile" },
 { "key": "ctrl+shift+i",    "command": "workbench.action.toggleDevTools" },
 { "key": "cmd+alt+i",       "command": "workbench.action.toggleDevTools" },
 { "key": "ctrl+shift+q",    "command": "workbench.action.toggleMaximizedPanel" },
