@@ -35,6 +35,11 @@
 { "key": "cmd+n",           "command": "explorer.newFile", "when": "explorerViewletVisible && filesExplorerFocus" },
 { "key": "ctrl+shift+n",    "command": "explorer.newFolder", "when": "explorerViewletVisible && filesExplorerFocus" },
 { "key": "cmd+shift+n",     "command": "explorer.newFolder", "when": "explorerViewletVisible && filesExplorerFocus" },
+// Terminal command tracking on Windows and Linux
+{ "key": "ctrl+up",         "command": "workbench.action.terminal.scrollToPreviousCommand", "when": "terminalFocus" },
+{ "key": "ctrl+down",       "command": "workbench.action.terminal.scrollToNextCommand", "when": "terminalFocus" },
+{ "key": "ctrl+shift+up",   "command": "workbench.action.terminal.selectToPreviousCommand", "when": "terminalFocus" },
+{ "key": "ctrl+shift+down", "command": "workbench.action.terminal.selectToNextCommand", "when": "terminalFocus" }
 
 // Don't close when ctrl+w with no files open
 { "key": "ctrl+w",          "command": "-workbench.action.closeWindow", "when": "!editorIsOpen" },
