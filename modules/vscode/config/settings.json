@@ -1,4 +1,6 @@
 {
+  "debug.internalConsoleOptions": "neverOpen",
+
   "editor.autoClosingBrackets": false,
   "editor.codeLens": false,
   "editor.folding": false,
@@ -8,6 +10,7 @@
   "editor.minimap.renderCharacters": false,
   "editor.renderControlCharacters": true,
   "editor.renderIndentGuides": true,
+  "editor.renderLineHighlight": "all",
   "editor.renderWhitespace": "boundary",
   "editor.roundedSelection": false,
   "editor.rulers": [ 80, 100, 120 ],
@@ -20,19 +23,21 @@
 
   "files.defaultLanguage": "markdown",
   "files.hotExit": "onExitAndWindowClose",
-  "files.useExperimentalFileWatcher": true,
 
   "terminal.integrated.cursorBlinking": true,
   "terminal.integrated.scrollback": 5000,
-  "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
+  "terminal.integrated.shell.windows": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
 
   "window.restoreWindows": "all",
   "window.title": "${rootPath}${separator}${activeEditorName}${separator}${appName}",
 
+  "workbench.colorCustomizations": {
+  },
   "workbench.colorTheme": "Sapphire",
   "workbench.editor.enablePreviewFromQuickOpen": false,
-  "workbench.iconTheme": "seti",
+  "workbench.iconTheme": "material-icon-theme",
   "workbench.startupEditor": "none",
+  "workbench.statusBar.feedback.visible": false,
 
   // Languages
   "markdown.preview.scrollEditorWithPreview": false,
@@ -47,5 +52,17 @@
   ],
   "gitProjectManager.maxDepthRecursion": 2,
   "material-icon-theme.showReloadMessage": false,
-  "material-icon-theme.showWelcomeMessage": false
+  "material-icon-theme.showWelcomeMessage": false,
+  "todohighlight.keywords": [
+    {
+      "text": "TODO:",
+      "color": "#399EF4",
+      "backgroundColor": "transparent"
+    },
+    {
+      "text": "HACK:",
+      "color": "#DA6771",
+      "backgroundColor": "transparent"
+    }
+  ]
 }
