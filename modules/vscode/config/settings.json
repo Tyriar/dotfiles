@@ -53,6 +53,23 @@
   "gitProjectManager.maxDepthRecursion": 2,
   "material-icon-theme.showReloadMessage": false,
   "material-icon-theme.showWelcomeMessage": false,
+  "material-icon-theme.files.associations": {
+    ".eslintrc": "json",
+    "appveyor.yml": "yaml",
+    ".travis.yml": "yaml",
+    ".mention-bot": "git",
+    ".yarnrc": "nodejs",
+    "yarn.lock": "nodejs",
+    "mocha.opts": "nodejs",
+    "CODE_OF_CONDUCT.md": "document",
+    "CODE_OF_CONDUCT.txt": "document",
+    "CONTRIBUTING.md": "document",
+    "CONTRIBUTING.txt": "document",
+    "README.md": "document",
+    "README.txt": "document",
+    "LICENSE.txt": "document",
+    "LICENSE.md": "document"
+  },
   "material-icon-theme.folders.associations": {
     "src": "src"
   },
