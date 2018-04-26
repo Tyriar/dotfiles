@@ -9,11 +9,12 @@ var symlinkOrReplaceFilesInFolderSync = require('../../util/symlink-or-replace-f
 var extensions = [
   "cssho.vscode-svgviewer",
   "EditorConfig.EditorConfig",
-  "felipecaputo.git-project-manager",
-  "Tyriar.theme-sapphire",
-  "qinjia.seti-icons",
   "eg2.tslint",
-  "eg2.vscode-npm-script"
+  "eg2.vscode-npm-script",
+  "felipecaputo.git-project-manager",
+  "qinjia.seti-icons",
+  "Tyriar.theme-sapphire",
+  "wayou.vscode-todo-highlight"
 ];
 
 function getBaseDir() {
