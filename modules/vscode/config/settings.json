@@ -53,6 +53,11 @@
   "gitProjectManager.maxDepthRecursion": 2,
   "material-icon-theme.showReloadMessage": false,
   "material-icon-theme.showWelcomeMessage": false,
+  "material-icon-theme.folders.associations": {
+    "src": "src"
+  },
+
+  "material-icon-theme.folders.theme": "classic",
   "todohighlight.keywords": [
     {
       "text": "TODO:",
