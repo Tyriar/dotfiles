@@ -20,6 +20,7 @@
 
   "extensions.autoUpdate": true,
   "extensions.ignoreRecommendations": true,
+  "extensions.showRecommendationsOnlyOnDemand": true,
 
   "files.defaultLanguage": "markdown",
   "files.hotExit": "onExitAndWindowClose",
@@ -34,7 +35,6 @@
   "workbench.colorCustomizations": {
     "editorIndentGuide.activeBackground": "#535a6b"
   },
-  "workbench.colorTheme": "Sapphire",
   "workbench.editor.enablePreviewFromQuickOpen": false,
   "workbench.iconTheme": "material-icon-theme",
   "workbench.settings.openDefaultSettings": false,
@@ -97,5 +97,6 @@
       "color": "#DA6771",
       "backgroundColor": "transparent"
     }
-  ]
+  ],
+  "workbench.colorTheme": "Sapphire"
 }
