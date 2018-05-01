@@ -37,6 +37,7 @@
   "workbench.colorTheme": "Sapphire",
   "workbench.editor.enablePreviewFromQuickOpen": false,
   "workbench.iconTheme": "material-icon-theme",
+  "workbench.settings.openDefaultSettings": false,
   "workbench.startupEditor": "none",
   "workbench.statusBar.feedback.visible": false,
 

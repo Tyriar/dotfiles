@@ -16,6 +16,7 @@
 { "key": "ctrl+,",           "command": "workbench.action.openGlobalSettings" },
 { "key": "ctrl+k ctrl+s",    "command": "workbench.action.openGlobalKeybindingsFile" },
 { "key": "cmd+k cmd+s",      "command": "workbench.action.openGlobalKeybindingsFile" },
+{ "key": "shift+cmd+,",      "command": "workbench.action.openRawDefaultSettings" },
 { "key": "ctrl+shift+i",     "command": "workbench.action.toggleDevTools" },
 { "key": "cmd+alt+i",        "command": "workbench.action.toggleDevTools" },
 { "key": "ctrl+shift+q",     "command": "workbench.action.toggleMaximizedPanel" },
@@ -55,5 +56,6 @@
 { "key": "shift+alt+f3",     "command": "workbench.action.editor.previousChange", "when": "editorTextFocus" },
 
 { "key": "shift+ctrl+space", "command": "editor.action.triggerParameterHints", "when": "editorHasSignatureHelpProvider && editorTextFocus" },
-{ "key": "shift+cmd+space",  "command": "-editor.action.triggerParameterHints" }
+{ "key": "shift+cmd+space",  "command": "-editor.action.triggerParameterHints" },
+{ "key": "cmd+k",            "command": "workbench.action.terminal.clear", "when": "terminalFocus" }
 ]
