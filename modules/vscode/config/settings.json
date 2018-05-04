@@ -90,12 +90,14 @@
     {
       "text": "TODO:",
       "color": "#399EF4",
-      "backgroundColor": "transparent"
+      "backgroundColor": "transparent",
+      "overviewRulerColor": "transparent"
     },
     {
       "text": "HACK:",
       "color": "#DA6771",
-      "backgroundColor": "transparent"
+      "backgroundColor": "transparent",
+      "overviewRulerColor": "transparent"
     }
   ],
   "workbench.colorTheme": "Sapphire"
