@@ -70,15 +70,8 @@
     ".mailmap": "settings",
     ".npmrc": "nodejs",
     ".npmignore": "nodejs",
-    "*.md": "document",
-    "CODE_OF_CONDUCT.md": "document",
-    "CODE_OF_CONDUCT.txt": "document",
-    "CONTRIBUTING.md": "document",
-    "CONTRIBUTING.txt": "document",
-    "README.md": "document",
-    "README.txt": "document",
-    "LICENSE.txt": "document",
-    "LICENSE.md": "document",
+    "**.md": "document",
+    "**.txt": "document",
     "LICENSE": "document"
   },
   "material-icon-theme.folders.associations": {
@@ -89,6 +82,12 @@
   "todohighlight.keywords": [
     {
       "text": "TODO:",
+      "color": "#399EF4",
+      "backgroundColor": "transparent",
+      "overviewRulerColor": "transparent"
+    },
+    {
+      "text": "FIXME:",
       "color": "#399EF4",
       "backgroundColor": "transparent",
       "overviewRulerColor": "transparent"
