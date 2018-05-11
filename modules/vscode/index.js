@@ -12,7 +12,7 @@ var extensions = [
   "eg2.tslint",
   "eg2.vscode-npm-script",
   "felipecaputo.git-project-manager",
-  "qinjia.seti-icons",
+  "pkief.material-icon-theme",
   "Tyriar.theme-sapphire",
   "wayou.vscode-todo-highlight"
 ];
