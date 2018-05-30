@@ -46,6 +46,8 @@
   "[markdown]": {
     "editor.quickSuggestions": false
   },
+  "javascript.showUnused.enabled": false,
+  "typescript.showUnused.enabled": false,
 
   // Extensions
   "gitProjectManager.baseProjectsFolders": [
