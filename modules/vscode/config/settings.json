@@ -36,6 +36,7 @@
     "editorIndentGuide.activeBackground": "#535a6b"
   },
   "workbench.editor.enablePreviewFromQuickOpen": false,
+  "workbench.editor.closeEmptyGroups": false,
   "workbench.iconTheme": "material-icon-theme",
   "workbench.settings.openDefaultSettings": false,
   "workbench.startupEditor": "none",
