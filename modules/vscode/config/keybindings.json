@@ -52,6 +52,8 @@
 // Override next/previous change keybindings to NOT show the inline diff editor
 { "key": "alt+f3",           "command": "workbench.action.editor.nextChange", "when": "editorTextFocus" },
 { "key": "shift+alt+f3",     "command": "workbench.action.editor.previousChange", "when": "editorTextFocus" },
+{ "key": "alt+f3",           "command": "workbench.action.compareEditor.nextChange", "when": "isInDiffEditor" },
+{ "key": "shift+alt+f3",     "command": "workbench.action.compareEditor.previousChange", "when": "isInDiffEditor" },
 
 // Preferred hint keybinding on macOS
 { "key": "shift+ctrl+space", "command": "editor.action.triggerParameterHints", "when": "editorHasSignatureHelpProvider && editorTextFocus" },
