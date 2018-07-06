@@ -70,9 +70,10 @@ fi
 if [ "$NVM_DIR" != "$HOME/.nvm" ]; then
   if [ "$TERM_PROGRAM" = "" ]; then
     # Always initialize if $TERM_PROGRAM is not set, this will happens for example
-    # when VS Code launches but not when run in the majority of terminals.
-    export NVM_DIR="$HOME/.nvm"
-    . "$NVM_DIR"/nvm.sh
+    # when VS Code launches but not when run in the majority of terminals. Note
+    # that this does not set NVM_DIR so nvm will still set up aliases as needed
+    # in a terminal
+    . "$HOME".nvm/nvm.sh
   else
     # Defer initialization of nvm until nvm, node or a node-dependent command is
     # run. Ensure this block is only run once if .bashrc gets sourced multiple times
