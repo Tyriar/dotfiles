@@ -1,11 +1,15 @@
 {
   "debug.internalConsoleOptions": "neverOpen",
 
+  "breadcrumbs.enabled": true,
+  "breadcrumbs.filePath": "off",
+  
   "editor.autoClosingBrackets": false,
   "editor.codeLens": false,
   "editor.folding": false,
   "editor.fontFamily": "Hack",
   "editor.formatOnPaste": false,
+  "editor.hover.sticky": false,
   "editor.minimap.enabled": true,
   "editor.minimap.renderCharacters": false,
   "editor.renderControlCharacters": true,
@@ -55,7 +59,7 @@
     "$HOME/dev",
     "%USERPROFILE%\\Documents\\dev"
   ],
-  "gitProjectManager.maxDepthRecursion": 2,
+  "gitProjectManager.maxDepthRecursion": 3,
   "material-icon-theme.showReloadMessage": false,
   "material-icon-theme.showWelcomeMessage": false,
   "material-icon-theme.files.associations": {
