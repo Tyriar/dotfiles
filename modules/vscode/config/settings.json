@@ -1,9 +1,9 @@
 {
-  "debug.internalConsoleOptions": "neverOpen",
-
   "breadcrumbs.enabled": true,
   "breadcrumbs.filePath": "off",
-  
+
+  "debug.internalConsoleOptions": "neverOpen",
+
   "editor.autoClosingBrackets": false,
   "editor.codeLens": false,
   "editor.folding": false,
