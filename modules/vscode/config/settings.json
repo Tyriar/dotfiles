@@ -35,6 +35,7 @@
 
   "window.restoreWindows": "all",
   "window.title": "${rootPath}${separator}${activeEditorName}${separator}${appName}",
+  "window.titleBarStyle": "custom",
 
   "workbench.colorCustomizations": {
     "editorIndentGuide.activeBackground": "#535a6b"
