@@ -4,8 +4,9 @@
 
   "debug.internalConsoleOptions": "neverOpen",
 
-  "editor.autoClosingBrackets": false,
+  "editor.autoClosingBrackets": "never",
   "editor.codeLens": false,
+  "editor.copyWithSyntaxHighlighting": false,
   "editor.folding": false,
   "editor.fontFamily": "Hack",
   "editor.formatOnPaste": false,
