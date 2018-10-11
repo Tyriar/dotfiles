@@ -60,6 +60,7 @@
     "%USERPROFILE%\\Documents\\dev"
   ],
   "gitProjectManager.maxDepthRecursion": 3,
+  "liveshare.showInStatusBar": "whileCollaborating",
   "material-icon-theme.showReloadMessage": false,
   "material-icon-theme.showWelcomeMessage": false,
   "material-icon-theme.files.associations": {
