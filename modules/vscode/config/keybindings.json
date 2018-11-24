@@ -52,15 +52,15 @@
 // Override next/previous change keybindings to NOT show the inline diff editor
 { "key": "alt+f3",           "command": "workbench.action.editor.nextChange", "when": "editorTextFocus" },
 { "key": "shift+alt+f3",     "command": "workbench.action.editor.previousChange", "when": "editorTextFocus" },
-{ "key": "alt+f3",           "command": "workbench.action.compareEditor.nextChange", "when": "isInDiffEditor" },
-{ "key": "shift+alt+f3",     "command": "workbench.action.compareEditor.previousChange", "when": "isInDiffEditor" },
+{ "key": "alt+f3",           "command": "workbench.action.compareEditor.nextChange", "when": "textCompareEditorVisible" },
+{ "key": "shift+alt+f3",     "command": "workbench.action.compareEditor.previousChange", "when": "textCompareEditorVisible" },
 
 // Preferred hint keybinding on macOS
 { "key": "shift+ctrl+space", "command": "editor.action.triggerParameterHints", "when": "editorHasSignatureHelpProvider && editorTextFocus" },
 { "key": "shift+cmd+space",  "command": "-editor.action.triggerParameterHints" },
 
 // Ensure terminal clear keybinding overrides chords added by extensions
-{ "key": "cmd+k",            "command": "workbench.action.terminal.clear", "when": "terminalFocus" }
+{ "key": "cmd+k",            "command": "workbench.action.terminal.clear", "when": "terminalFocus" },
 
 // Extensions
 { "key": "ctrl+alt+o",       "command": "gitProjectManager.openProject" },
