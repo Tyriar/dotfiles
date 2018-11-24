@@ -29,8 +29,12 @@ function getBaseDir() {
   return baseDir;
 }
 
-function getConfigDir() {
+function getConfigDirInsiders() {
   return path.join(getBaseDir(), 'Code - Insiders', 'User');
+}
+
+function getConfigDirExploration() {
+  return path.join(getBaseDir(), 'Code - Exploration', 'User');
 }
 
 module.exports.install = function () {
@@ -43,7 +47,8 @@ function installConfigFiles() {
   logHelper.logSubStepPartialStarted('installing config files');
   var sourceDir = path.join(__dirname, 'config');
   var files = fs.readdirSync(sourceDir);
-  symlinkOrReplaceFilesInFolderSync(files, sourceDir, getConfigDir());
+  symlinkOrReplaceFilesInFolderSync(files, sourceDir, getConfigDirInsiders());
+  symlinkOrReplaceFilesInFolderSync(files, sourceDir, getConfigDirExploration());
   logHelper.logSubStepPartialSuccess();
 }
 
@@ -53,4 +58,5 @@ function installExtensions() {
 
 function installExtension(name) {
   execAndReportSync('installing ' + name, 'code-insiders --install-extension ' + name);
+  execAndReportSync('installing ' + name, 'code-exploration --install-extension ' + name);
 }
