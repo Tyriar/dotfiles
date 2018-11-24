@@ -80,7 +80,8 @@
     ".npmignore": "nodejs",
     "**.md": "document",
     "**.txt": "document",
-    "LICENSE": "document"
+    "LICENSE": "document",
+    "azure-pipelines.yml": "settings"
   },
   "material-icon-theme.folders.associations": {
     "src": "src"
