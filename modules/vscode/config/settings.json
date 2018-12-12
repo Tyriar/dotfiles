@@ -50,6 +50,7 @@
   "workbench.settings.openDefaultSettings": false,
   "workbench.startupEditor": "none",
   "workbench.statusBar.feedback.visible": false,
+  "workbench.tips.enabled": false,
 
   // Languages
   "markdown.preview.scrollEditorWithPreview": false,
