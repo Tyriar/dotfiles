@@ -47,6 +47,7 @@
   "workbench.editor.enablePreviewFromQuickOpen": false,
   "workbench.editor.closeEmptyGroups": false,
   "workbench.iconTheme": "material-icon-theme",
+  "workbench.settings.editor": "json",
   "workbench.settings.openDefaultSettings": false,
   "workbench.startupEditor": "none",
   "workbench.statusBar.feedback.visible": false,
@@ -59,6 +60,7 @@
   },
 
   // Extensions
+  "comments.openPanel": "neverOpen",
   "gitProjectManager.baseProjectsFolders": [
     "$HOME/dev",
     "%USERPROFILE%\\Documents\\dev"
