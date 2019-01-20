@@ -17,6 +17,7 @@
 { "key": "ctrl+k ctrl+s",    "command": "workbench.action.openGlobalKeybindingsFile" },
 { "key": "cmd+k cmd+s",      "command": "workbench.action.openGlobalKeybindingsFile" },
 { "key": "shift+cmd+,",      "command": "workbench.action.openRawDefaultSettings" },
+{ "key": "ctrl+alt+o",       "command": "workbench.action.openRecent" },
 { "key": "ctrl+shift+i",     "command": "workbench.action.toggleDevTools" },
 { "key": "cmd+alt+i",        "command": "workbench.action.toggleDevTools" },
 { "key": "ctrl+shift+q",     "command": "workbench.action.toggleMaximizedPanel" },
@@ -61,8 +62,4 @@
 
 // Ensure terminal clear keybinding overrides chords added by extensions
 { "key": "cmd+k",            "command": "workbench.action.terminal.clear", "when": "terminalFocus" },
-
-// Extensions
-{ "key": "ctrl+alt+o",       "command": "gitProjectManager.openProject" },
-{ "key": "ctrl+alt+p",       "command": "-gitProjectManager.openProject" },
 ]
