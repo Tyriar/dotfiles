@@ -36,6 +36,7 @@
   "terminal.integrated.scrollback": 5000,
   "terminal.integrated.shell.windows": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
 
+  "window.openFoldersInNewWindow": "on",
   "window.restoreWindows": "all",
   "window.title": "${rootName}${separator}${activeEditorShort}${separator}${appName}",
   "window.titleBarStyle": "custom",
