@@ -64,6 +64,10 @@
 
   // Extensions
   "comments.openPanel": "neverOpen",
+  "githubPullRequests.remotes": [
+    "origin",
+    "ups"
+  ],
   "gitProjectManager.baseProjectsFolders": [
     "$HOME/dev",
     "%USERPROFILE%\\Documents\\dev"
