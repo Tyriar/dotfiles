@@ -22,6 +22,7 @@
   "scripts": {
     "build": "tsc -p ./src",
     "lint": "tslint ./src/**/*.ts",
+    "postinstall": "npm run build",
     "start": "node ./lib/cli.js",
     "watch": "tsc -w -p ./src"
   },
