@@ -11,6 +11,7 @@ var allModules = [
   'fonts',
   'git',
   'gnome-terminal',
+  'pwsh',
   'vim',
   'vscode'
 ];
