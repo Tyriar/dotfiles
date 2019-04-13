@@ -1,22 +1,21 @@
 var chalk = require('chalk');
 var os = require('os');
-var process = require('process');
 
-function logStepStarted(step) {
+function logStepStarted(step: string) {
   console.log(step);
 }
 
-function logSubStepSuccess(actionName) {
+function logSubStepSuccess(actionName: string) {
   logSubStepPartialStarted(actionName);
   logSubStepPartialSuccess();
 }
 
-function logSubStepFail(actionName) {
+function logSubStepFail(actionName: string) {
   logSubStepPartialStarted(actionName);
   logSubStepPartialFail();
 }
 
-function logSubStepPartialStarted(actionName) {
+function logSubStepPartialStarted(actionName: string) {
   process.stdout.write('  ' + actionName);
 }
 

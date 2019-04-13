@@ -6,34 +6,19 @@ My dotfiles for Linux and Windows.
 
 ## Dependencies
 
-Node.js is the primary dependency, here are some helper scripts:
-
-```bash
-# For nodejs stable
-./install_node
-
-# For nodejs LTS
-./install_node lts
-```
+Node.js is required to run this project.
 
 ## Installing/syncing environment
 
 ```bash
 npm install
-node cli.js install
-source ~/.bash_profile
-```
-
-### On Ubuntu
-
-```bash
-./scripts/bootstrap.sh
+npm start install
 ```
 
 ## Installing a single module
 
 ```bash
-node cli.js install <module>
+npm start install <module>
 ```
 
 ## Acknowledgements

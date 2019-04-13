@@ -2,3 +2,4 @@ node_modules
 scripts/temp
 yarn.lock
 package-lock.json
+lib/

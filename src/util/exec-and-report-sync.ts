@@ -1,10 +1,9 @@
 var chalk = require('chalk');
 var logHelper = require('../util/log-helper');
 var os = require('os');
-var process = require('process');
 var syncExec = require('sync-exec');
 
-module.exports = function (actionName, command) {
+module.exports = function (actionName: string, command: string) {
   logHelper.logSubStepPartialStarted(actionName);
   var result = syncExec(command);
   if (result.status === 0) {

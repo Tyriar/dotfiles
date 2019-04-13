@@ -19,6 +19,11 @@
     "url": "https://github.com/Tyriar/dotfiles/issues"
   },
   "homepage": "https://github.com/Tyriar/dotfiles#readme",
+  "scripts": {
+    "build": "tsc -p ./src",
+    "start": "node ./lib/cli.js",
+    "watch": "tsc -w -p ./src"
+  },
   "dependencies": {
     "chalk": "^1.1.1",
     "gnome-terminal-version": "^0.1.0",
@@ -28,5 +33,10 @@
     "semver": "^5.1.0",
     "symlink-or-copy": "^1.0.1",
     "sync-exec": "^0.6.2"
+  },
+  "devDependencies": {
+    "@types/meow": "^5.0.0",
+    "@types/node": "^11.13.4",
+    "typescript": "^3.4.3"
   }
 }
