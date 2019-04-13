@@ -5,6 +5,7 @@
   "debug.internalConsoleOptions": "neverOpen",
 
   "editor.autoClosingBrackets": "never",
+  "editor.autoClosingQuotes": "beforeWhitespace",
   "editor.autoSurround": "never",
   "editor.codeLens": false,
   "editor.copyWithSyntaxHighlighting": false,
@@ -28,7 +29,7 @@
   "extensions.autoUpdate": true,
   "extensions.ignoreRecommendations": true,
   "extensions.showRecommendationsOnlyOnDemand": true,
-  
+
   "gulp.autoDetect": "off",
 
   "files.defaultLanguage": "markdown",
