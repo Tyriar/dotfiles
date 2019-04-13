@@ -20,10 +20,10 @@ export function logSubStepPartialStarted(actionName: string) {
 
 export function logSubStepPartialSuccess() {
   var successChar = process.platform === 'win32' ? '\u221A' : '✔';
-  process.stdout.write('  \x1b[32m' + successChar + '\x1b[0m' + os.EOL);
+  process.stdout.write(`  \x1b[32m${successChar}\x1b[0m${os.EOL}`);
 }
 
 export function logSubStepPartialFail() {
   var successChar = process.platform === 'win32' ? 'X' : '✗';
-  process.stdout.write('  \x1b[31m' + successChar + '\x1b[0m' + os.EOL);
+  process.stdout.write(`  \x1b[31m${successChar}\x1b[0m${os.EOL}`);
 }

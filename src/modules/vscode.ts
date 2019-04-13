@@ -19,9 +19,9 @@ var extensions = [
 function getBaseDir() {
   var baseDir = getHomePath();
   if (process.platform === 'win32') {
-    baseDir = path.join(baseDir, 'AppData', 'Roaming');
+    baseDir = path.join(baseDir, 'AppData/Roaming');
   } else if (process.platform === 'darwin') {
-    baseDir = path.join(baseDir, 'Library', "Application Support");
+    baseDir = path.join(baseDir, 'Library/Application Support');
   } else {
     baseDir = path.join(baseDir, '.config');
   }
@@ -29,11 +29,11 @@ function getBaseDir() {
 }
 
 function getConfigDirInsiders() {
-  return path.join(getBaseDir(), 'Code - Insiders', 'User');
+  return path.join(getBaseDir(), 'Code - Insiders/User');
 }
 
 function getConfigDirExploration() {
-  return path.join(getBaseDir(), 'Code - Exploration', 'User');
+  return path.join(getBaseDir(), 'Code - Exploration/User');
 }
 
 module.exports.install = function () {
@@ -44,7 +44,7 @@ module.exports.install = function () {
 
 function installConfigFiles() {
   logHelper.logSubStepPartialStarted('installing config files');
-  var sourceDir = path.join(__dirname, '..', '..', 'data', 'vscode');
+  var sourceDir = path.join(__dirname, '../../data/vscode');
   var files = fs.readdirSync(sourceDir);
   symlinkOrReplaceFilesInFolderSync(files, sourceDir, getConfigDirInsiders());
   symlinkOrReplaceFilesInFolderSync(files, sourceDir, getConfigDirExploration());
@@ -56,6 +56,6 @@ function installExtensions() {
 }
 
 function installExtension(name: string) {
-  execAndReportSync('installing ' + name, 'code-insiders --install-extension ' + name);
-  execAndReportSync('installing ' + name, 'code-exploration --install-extension ' + name);
+  execAndReportSync(`installing ${name}`, `code-insiders --install-extension ${name}`);
+  execAndReportSync(`installing ${name}`, `code-exploration --install-extension ${name}`);
 }

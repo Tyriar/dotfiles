@@ -6,7 +6,7 @@ const getHomePath = require('home-path');
 
 module.exports.install = function () {
   logHelper.logStepStarted('git');
-  var sourceDir = path.join(__dirname, '..', '..', 'data', 'git');
+  var sourceDir = path.join(__dirname, '../../data/git');
   var destDir = path.join(getHomePath());
   var files = fs.readdirSync(sourceDir);
   logHelper.logSubStepPartialStarted('applying config files');

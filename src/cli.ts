@@ -11,12 +11,12 @@ var allModules = [
 ];
 
 var cli = meow([
-  'Usage: dotfiles install [<module>...]',
-  '',
-  'where <module> is one or more of:',
-  '    ' + allModules.join(', '),
-  '',
-  'Specify no <module> to install everything'
+  `Usage: dotfiles install [<module>...]`,
+  ``,
+  `where <module> is one or more of:`,
+  `    ${allModules.join(', ')}`,
+  ``,
+  `Specify no <module> to install everything`
 ], {});
 
 if (cli.input.length === 0) {
@@ -43,8 +43,8 @@ function install(moduleList: string[]) {
 
 function installModule(m: string) {
   if (allModules.indexOf(m) === -1) {
-    console.error('Error: tried to install non-existing module "' + m + '"');
+    console.error(`Error: tried to install non-existing module "${m}"`);
     return;
   }
-  require('./modules/' + m).install();
+  require(`./modules/${m}`).install();
 }

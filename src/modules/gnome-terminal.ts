@@ -14,7 +14,7 @@ module.exports.install = function () {
       }
 
       if (semver.major(version) == 3 && semver.minor(version) >= 8 || semver.major(version) > 3) {
-        execAndReportSync('applying profile theme (Gnome 3.8+)', path.join(__dirname, '..', '..', 'data', 'gnome-terminal', 'profile-theme-3.8.sh'));
+        execAndReportSync('applying profile theme (Gnome 3.8+)', path.join(__dirname, '../../data/gnome-terminal/profile-theme-3.8.sh'));
       } else {
         execAndReportSync('applying profile theme', path.join(__dirname, 'profile-theme.sh'));
       }
