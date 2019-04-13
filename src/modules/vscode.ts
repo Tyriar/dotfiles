@@ -40,7 +40,6 @@ function installExtensions(): void {
 
 function installExtension(name: string): void {
   execAndReportSync(`installing ${name}`, `code-insiders --install-extension ${name}`);
-  execAndReportSync(`installing ${name}`, `code-exploration --install-extension ${name}`);
 }
 
 export function install(): void {
