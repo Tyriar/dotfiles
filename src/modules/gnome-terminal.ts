@@ -1,12 +1,8 @@
-var chalk = require('chalk');
-var execAndReportSync = require('../util/exec-and-report-sync');
-var fs = require('fs');
-var getHomePath = require('home-path');
-var gnomeTerminalVersion = require('gnome-terminal-version');
-var logHelper = require('../util/log-helper');
-var path = require('path');
-var semver = require('semver');
-var symlinkOrReplaceFilesInFolderSync = require('../util/symlink-or-replace-files-in-folder-sync');
+import * as logHelper from '../util/log-helper';
+import * as path from 'path';
+import { execAndReportSync } from "../util/exec";
+const gnomeTerminalVersion = require('gnome-terminal-version');
+const semver = require('semver');
 
 module.exports.install = function () {
   if (process.platform === 'linux') {

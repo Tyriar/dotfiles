@@ -25,7 +25,6 @@
     "watch": "tsc -w -p ./src"
   },
   "dependencies": {
-    "chalk": "^1.1.1",
     "gnome-terminal-version": "^0.1.0",
     "home-path": "^1.0.1",
     "meow": "^3.5.0",
@@ -36,7 +35,9 @@
   },
   "devDependencies": {
     "@types/meow": "^5.0.0",
+    "@types/mkdirp": "^0.5.2",
     "@types/node": "^11.13.4",
+    "@types/symlink-or-copy": "^1.2.0",
     "typescript": "^3.4.3"
   }
 }

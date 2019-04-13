@@ -1,39 +1,29 @@
-var chalk = require('chalk');
-var os = require('os');
+import * as os from 'os';
 
-function logStepStarted(step: string) {
+export function logStepStarted(step: string) {
   console.log(step);
 }
 
-function logSubStepSuccess(actionName: string) {
+export function logSubStepSuccess(actionName: string) {
   logSubStepPartialStarted(actionName);
   logSubStepPartialSuccess();
 }
 
-function logSubStepFail(actionName: string) {
+export function logSubStepFail(actionName: string) {
   logSubStepPartialStarted(actionName);
   logSubStepPartialFail();
 }
 
-function logSubStepPartialStarted(actionName: string) {
+export function logSubStepPartialStarted(actionName: string) {
   process.stdout.write('  ' + actionName);
 }
 
-function logSubStepPartialSuccess() {
+export function logSubStepPartialSuccess() {
   var successChar = process.platform === 'win32' ? '\u221A' : '✔';
-  process.stdout.write(' ' + chalk.green(successChar) + os.EOL);
+  process.stdout.write('  \x1b[32m' + successChar + '\x1b[0m' + os.EOL);
 }
 
-function logSubStepPartialFail() {
+export function logSubStepPartialFail() {
   var successChar = process.platform === 'win32' ? 'X' : '✗';
-  process.stdout.write(' ' + chalk.red(successChar) + os.EOL);
-}
-
-module.exports = {
-  logStepStarted: logStepStarted,
-  logSubStepSuccess: logSubStepSuccess,
-  logSubStepFail: logSubStepFail,
-  logSubStepPartialStarted: logSubStepPartialStarted,
-  logSubStepPartialSuccess: logSubStepPartialSuccess,
-  logSubStepPartialFail: logSubStepPartialFail
+  process.stdout.write('  \x1b[31m' + successChar + '\x1b[0m' + os.EOL);
 }

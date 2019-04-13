@@ -1,6 +1,6 @@
-var execAndReportSync = require('../util/exec-and-report-sync');
-var logHelper = require('../util/log-helper');
-var path = require('path');
+import * as logHelper from '../util/log-helper';
+import * as path from 'path';
+import { execAndReportSync } from "../util/exec";
 
 module.exports.install = function () {
   if (process.platform !== 'win32') {

@@ -1,8 +1,8 @@
-var fs = require('fs');
-var getHomePath = require('home-path');
-var logHelper = require('../util/log-helper');
-var path = require('path');
-var symlinkOrReplaceFilesInFolderSync = require('../util/symlink-or-replace-files-in-folder-sync');
+import { symlinkOrReplaceFilesInFolderSync } from "../util/files";
+import * as fs from 'fs';
+import * as logHelper from '../util/log-helper';
+import * as path from 'path';
+const getHomePath = require('home-path');
 
 module.exports.install = function () {
   if (process.platform !== 'win32') {
