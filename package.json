@@ -21,6 +21,7 @@
   "homepage": "https://github.com/Tyriar/dotfiles#readme",
   "scripts": {
     "build": "tsc -p ./src",
+    "lint": "tslint ./src/**/*.ts",
     "start": "node ./lib/cli.js",
     "watch": "tsc -w -p ./src"
   },
@@ -38,6 +39,8 @@
     "@types/mkdirp": "^0.5.2",
     "@types/node": "^11.13.4",
     "@types/symlink-or-copy": "^1.2.0",
+    "tslint": "^5.15.0",
+    "tslint-consistent-codestyle": "^1.15.1",
     "typescript": "^3.4.3"
   }
 }

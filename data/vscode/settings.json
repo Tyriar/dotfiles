@@ -102,8 +102,8 @@
   "material-icon-theme.folders.associations": {
     "src": "src"
   },
-
   "material-icon-theme.folders.theme": "classic",
+  "powershell.integratedConsole.showOnStartup": false,
   "todohighlight.keywords": [
     {
       "text": "TODO:",

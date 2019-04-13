@@ -1,6 +1,6 @@
 import * as meow from 'meow';
 
-var allModules = [
+const allModules = [
   'bash',
   'fonts',
   'git',
@@ -10,7 +10,7 @@ var allModules = [
   'vscode'
 ];
 
-var cli = meow([
+const cli = meow([
   `Usage: dotfiles install [<module>...]`,
   ``,
   `where <module> is one or more of:`,
@@ -25,15 +25,15 @@ if (cli.input.length === 0) {
   process.exit(1);
 }
 
-var commands = {
-  "install": install
+const commands = {
+  install
 };
 
 if (cli.input[0] in commands) {
   (commands as any)[cli.input[0]].call(undefined, cli.input.splice(1));
 }
 
-function install(moduleList: string[]) {
+function install(moduleList: string[]): void {
   if (moduleList.length === 0) {
     allModules.forEach(installModule);
   } else {
@@ -41,7 +41,7 @@ function install(moduleList: string[]) {
   }
 }
 
-function installModule(m: string) {
+function installModule(m: string): void {
   if (allModules.indexOf(m) === -1) {
     console.error(`Error: tried to install non-existing module "${m}"`);
     return;
