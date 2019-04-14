@@ -12,7 +12,6 @@
   "editor.folding": false,
   "editor.fontFamily": "Hack",
   "editor.formatOnPaste": false,
-  "editor.hover.sticky": false,
   "editor.minimap.enabled": true,
   "editor.minimap.renderCharacters": false,
   "editor.minimap.showSlider": "always",
