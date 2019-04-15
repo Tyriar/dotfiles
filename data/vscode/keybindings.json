@@ -9,7 +9,7 @@
 
 { "key": "ctrl+shift+w",     "command": "workbench.action.closeAllEditors" },
 { "key": "cmd+shift+w",      "command": "workbench.action.closeAllEditors" },
-{ "key": "ctrl+shift+o",     "command": "workbench.action.files.openFolder" },
+{ "key": "ctrl+shift+o",     "command": "workbench.action.files.openFolder", "when": "!isMac" },
 { "key": "ctrl+r",           "command": "workbench.action.gotoSymbol" },
 { "key": "alt+-",            "command": "workbench.action.navigateBack" },
 { "key": "alt+shift+-",      "command": "workbench.action.navigateForward" },
@@ -18,6 +18,8 @@
 { "key": "cmd+k cmd+s",      "command": "workbench.action.openGlobalKeybindingsFile" },
 { "key": "shift+cmd+,",      "command": "workbench.action.openRawDefaultSettings" },
 { "key": "ctrl+alt+o",       "command": "workbench.action.openRecent" },
+{ "key": "ctrl+shift+r",     "command": "workbench.action.reloadWindow", "when": "!isMac" },
+{ "key": "cmd+shift+r",      "command": "workbench.action.reloadWindow", "when": "isMac" },
 { "key": "ctrl+shift+i",     "command": "workbench.action.toggleDevTools" },
 { "key": "cmd+alt+i",        "command": "workbench.action.toggleDevTools" },
 { "key": "ctrl+shift+q",     "command": "workbench.action.toggleMaximizedPanel" },
