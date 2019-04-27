@@ -46,3 +46,5 @@ alias up='sudo apt update && sudo apt install code-insiders'
 if which hub &> /dev/null; then
   alias git='hub'
 fi
+
+alias glfp='git log --first-parent'
