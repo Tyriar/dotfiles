@@ -30,6 +30,8 @@
 { "key": "ctrl+shift+j",     "command": "workbench.action.terminal.focusNext" },
 { "key": "ctrl+shift+k",     "command": "workbench.action.terminal.focusPrevious" },
 { "key": "ctrl+a",           "command": "workbench.action.terminal.selectAll", "when": "terminalFocus" },
+{ "key": "cmd+q",            "command": "-workbench.action.quit", "when": "isMac" },
+{ "key": "cmd+q cmd+q",      "command": "workbench.action.quit", "when": "isMac" }
 
 // Make Windows copy/paste behave the same as Linux
 { "key": "ctrl+shift+c",     "command": "workbench.action.terminal.copySelection", "when": "terminalFocus && terminalTextSelected" },
