@@ -21,6 +21,12 @@ npm start install
 npm start install <module>
 ```
 
+## Setup a Debian-based Linux box
+
+```bash
+bash <(wget -qO- https://raw.githubusercontent.com/Tyriar/dotfiles/master/scripts/setup_deb.sh)
+```
+
 ## Acknowledgements
 
 - [Nicolas Gallagher](https://github.com/necolas) - [Bash prompt script](https://github.com/necolas/dotfiles)
