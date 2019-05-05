@@ -11,9 +11,17 @@ const extensions = [
   'eg2.vscode-npm-script',
   'pkief.material-icon-theme',
   'Tyriar.theme-sapphire',
+  'Tyriar.theme-topaz',
   'wayou.vscode-todo-highlight',
   'ms-vscode.vscode-typescript-tslint-plugin',
-  'ms-vscode.powershell-preview'
+  'ms-vscode.powershell-preview',
+  'ms-vscode-remote.remote-containers',
+  'ms-vscode-remote.remote-ssh',
+  'ms-vscode-remote.remote-ssh-edit',
+  'ms-vscode-remote.remote-ssh-explorer',
+  'ms-vscode-remote.remote-wsl',
+  'ms-vscode-remote.vscode-remote-extensionpack',
+  'github.vscode-pull-request-github-insiders'
 ];
 
 function installConfigFiles(): void {
