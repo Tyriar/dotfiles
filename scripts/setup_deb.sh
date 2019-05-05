@@ -36,7 +36,8 @@ sudo apt-get update && sudo apt-get install -y yarn
 step "Setup .bashrc_local"
 rm -rf ~/.bashrc_local
 cat <<EOT >> ~/.bashrc_local
-export PATH=~/tools/$NODE_NAME/bin:/snap/bin:\$PATH
+npm set prefix ~/.npm-packages
+export PATH=~/.npm-packages/bin:~/tools/$NODE_NAME/bin:/snap/bin:\$PATH
 alias git=hub
 alias c=code-insiders
 EOT
