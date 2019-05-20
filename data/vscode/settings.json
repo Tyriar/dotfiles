@@ -33,6 +33,7 @@
 
   "files.defaultLanguage": "markdown",
   "files.hotExit": "onExitAndWindowClose",
+  "files.simpleDialog.enable": true,
 
   "remote.SSH.enableHostsExplorer": true,
 
@@ -49,7 +50,6 @@
   "workbench.colorCustomizations": {
     "editorIndentGuide.activeBackground": "#535a6b"
   },
-  "workbench.dialogs.useSimplified": "true",
   "workbench.editor.enablePreviewFromQuickOpen": false,
   "workbench.editor.closeEmptyGroups": false,
   "workbench.iconTheme": "material-icon-theme",
