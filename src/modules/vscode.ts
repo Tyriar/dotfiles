@@ -24,7 +24,7 @@ const extensions = [
   'github.vscode-pull-request-github-insiders'
 ];
 
-function installConfigFiles(): void {
+function getSettingsPath(quality: string): string {
   let baseDir = getHomePath();
   if (process.platform === 'win32') {
     baseDir = path.join(baseDir, 'AppData/Roaming');
@@ -33,13 +33,18 @@ function installConfigFiles(): void {
   } else {
     baseDir = path.join(baseDir, '.config');
   }
-  const configDirInsiders = path.join(baseDir, 'Code - Insiders/User');
+  return path.join(baseDir, `Code - ${quality}/User`);
+}
 
-  logHelper.logSubStepPartialStarted('installing config files');
-  const sourceDir = path.join(__dirname, '../../data/vscode');
-  const files = fs.readdirSync(sourceDir);
-  symlinkOrReplaceFilesInFolderSync(files, sourceDir, configDirInsiders);
-  logHelper.logSubStepPartialSuccess();
+function installConfigFiles(): void {
+  ['Insiders', 'Exploration'].forEach(quality => {
+    logHelper.logSubStepPartialStarted(`installing config files for ${quality}`);
+    const configDirInsiders = getSettingsPath(quality);
+    const sourceDir = path.join(__dirname, '../../data/vscode');
+    const files = fs.readdirSync(sourceDir);
+    symlinkOrReplaceFilesInFolderSync(files, sourceDir, configDirInsiders);
+    logHelper.logSubStepPartialSuccess();
+  });
 }
 
 function installExtensions(): void {
@@ -47,7 +52,8 @@ function installExtensions(): void {
 }
 
 function installExtension(name: string): void {
-  execAndReportSync(`installing ${name}`, `code-insiders --install-extension ${name}`);
+  execAndReportSync(`installing ${name} for Insiders`, `code-insiders --install-extension ${name}`);
+  execAndReportSync(`installing ${name} for Exploration`, `code-exploration --install-extension ${name}`);
 }
 
 export function install(): void {

@@ -48,7 +48,6 @@
   "window.titleBarStyle": "custom",
 
   "workbench.colorCustomizations": {
-    "editorIndentGuide.activeBackground": "#535a6b"
   },
   "workbench.editor.enablePreviewFromQuickOpen": false,
   "workbench.editor.closeEmptyGroups": false,
