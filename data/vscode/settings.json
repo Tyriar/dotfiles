@@ -51,6 +51,7 @@
   },
   "workbench.editor.enablePreviewFromQuickOpen": false,
   "workbench.editor.closeEmptyGroups": false,
+  "workbench.iconExploration.enabled": true,
   "workbench.iconTheme": "material-icon-theme",
   "workbench.settings.editor": "json",
   "workbench.settings.openDefaultSettings": false,
