@@ -60,6 +60,8 @@ if [ -r ~/.bash_prompt ]; then
   . ~/.bash_prompt
 fi
 
+export CDPATH=~/dev/Tyriar
+
 # Source .bashrc_local if it exists for .bashrc commands specific to this
 # machine.
 if [ -r ~/.bashrc_local ]; then
