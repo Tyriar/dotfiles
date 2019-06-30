@@ -64,6 +64,6 @@
 { "key": "shift+ctrl+space", "command": "editor.action.triggerParameterHints", "when": "editorHasSignatureHelpProvider && editorTextFocus" },
 { "key": "shift+cmd+space",  "command": "-editor.action.triggerParameterHints" },
 
-// Ensure terminal clear keybinding overrides chords added by extensions
-{ "key": "cmd+k",            "command": "workbench.action.terminal.clear", "when": "terminalFocus && isMac" },
+// Disable cmd+k on mac such that chords will work
+{ "key": "cmd+k",            "command": "-workbench.action.terminal.clear", "when": "terminalFocus && isMac" },
 ]
