@@ -38,7 +38,6 @@ rm -rf ~/.bashrc_local
 cat <<EOT > ~/.bashrc_local
 export PATH=~/.npm-packages/bin:~/tools/$NODE_NAME/bin:/snap/bin:\$PATH
 npm set prefix ~/.npm-packages
-alias git=hub
 alias c=code-insiders
 EOT
 . ~/.bashrc_local
