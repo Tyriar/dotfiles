@@ -71,13 +71,6 @@
     "origin",
     "ups"
   ],
-  "gitProjectManager.baseProjectsFolders": [
-    "$HOME/dev",
-    "%USERPROFILE%\\Documents\\dev"
-  ],
-  "gitProjectManager.maxDepthRecursion": 3,
-  "gitProjectManager.displayProjectPath": true,
-  "gitProjectManager.checkRemoteOrigin": false,
   "liveshare.showInStatusBar": "whileCollaborating",
   "material-icon-theme.showReloadMessage": false,
   "material-icon-theme.showWelcomeMessage": false,
@@ -105,7 +98,6 @@
     "src": "src"
   },
   "material-icon-theme.folders.theme": "classic",
-  "powershell.integratedConsole.showOnStartup": false,
   "todohighlight.keywords": [
     {
       "text": "TODO:",
