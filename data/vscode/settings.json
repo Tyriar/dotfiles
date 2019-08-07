@@ -67,6 +67,10 @@
 
   // Extensions
   "comments.openPanel": "neverOpen",
+  "errorLens.errorForeground": "#da6771",
+  "errorLens.errorBackground": "#da677140",
+  "errorLens.warningForeground": "#cca700",
+  "errorLens.warningBackground": "#cca70040",
   "githubPullRequests.remotes": [
     "origin",
     "ups"
