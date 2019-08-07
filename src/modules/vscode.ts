@@ -21,7 +21,8 @@ const extensions = [
   'ms-vscode-remote.remote-ssh-explorer',
   'ms-vscode-remote.remote-wsl',
   'ms-vscode-remote.vscode-remote-extensionpack',
-  'github.vscode-pull-request-github-insiders'
+  'github.vscode-pull-request-github-insiders',
+  'usernamehw.errorlens'
 ];
 
 function getSettingsPath(quality: string): string {
