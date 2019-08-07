@@ -46,7 +46,7 @@ step "Setup dev directory"
 clone Tyriar dotfiles
 clone Tyriar xterm.js
 clone Microsoft vscode
-cd xterm.js
+cd ~/dev/Tyriar/xterm.js
 git remote add ups https://github.com/xtermjs/xterm.js
 git fetch ups
 
