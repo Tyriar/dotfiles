@@ -24,6 +24,7 @@ npm start install <module>
 ## Setup a Debian-based Linux box
 
 ```bash
+sudo apt update && sudo apt install wget
 bash <(wget -qO- https://raw.githubusercontent.com/Tyriar/dotfiles/master/scripts/setup_deb.sh)
 ```
 
