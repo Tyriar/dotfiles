@@ -42,6 +42,7 @@
   "terminal.integrated.inheritEnv": false,
   "terminal.integrated.scrollback": 5000,
   "terminal.integrated.shell.windows": "C:\\Program Files\\PowerShell\\6\\pwsh.exe",
+  "terminal.integrated.splitCwd": "initial",
 
   "window.openFoldersInNewWindow": "on",
   "window.restoreWindows": "all",
