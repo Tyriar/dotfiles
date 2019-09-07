@@ -30,6 +30,8 @@
   "extensions.ignoreRecommendations": true,
   "extensions.showRecommendationsOnlyOnDemand": true,
 
+  "git.enableStatusBarSync": false,
+  
   "gulp.autoDetect": "off",
 
   "files.defaultLanguage": "markdown",
