@@ -47,7 +47,7 @@
 { "key": "ctrl+shift+down",  "command": "workbench.action.terminal.selectToNextCommand", "when": "terminalFocus" },
 
 // Don't close when ctrl+w with no files open
-{ "key": "ctrl+w",           "command": "-workbench.action.closeWindow", "when": "!editorIsOpen" },
+{ "key": "ctrl+w",           "command": "-workbench.action.closeWindow", "when": "!editorIsOpen && !multipleEditorGroups" },
 // This conflicts with a bash keybinding
 { "key": "ctrl+e",           "command": "-workbench.action.quickOpen" },
 // Unbind since it's rebound
