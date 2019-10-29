@@ -38,8 +38,6 @@
   "files.hotExit": "onExitAndWindowClose",
   "files.simpleDialog.enable": true,
 
-  "remote.SSH.enableHostsExplorer": true,
-
   "terminal.integrated.cursorBlinking": true,
   "terminal.integrated.inheritEnv": false,
   "terminal.integrated.scrollback": 5000,
@@ -55,7 +53,6 @@
   },
   "workbench.editor.enablePreviewFromQuickOpen": false,
   "workbench.editor.closeEmptyGroups": false,
-  "workbench.iconExploration.enabled": true,
   "workbench.iconTheme": "material-icon-theme",
   "workbench.settings.editor": "json",
   "workbench.settings.openDefaultSettings": false,
