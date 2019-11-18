@@ -48,3 +48,5 @@ if which hub &> /dev/null; then
 fi
 
 alias glfp='git log --first-parent'
+
+alias ports='sudo lsof -i -P -n | grep LISTEN'
