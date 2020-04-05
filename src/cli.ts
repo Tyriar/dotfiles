@@ -6,8 +6,7 @@ const allModules = [
   'git',
   'gnome-terminal',
   'pwsh',
-  'vim',
-  'vscode'
+  'vim'
 ];
 
 const cli = meow([
