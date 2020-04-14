@@ -17,7 +17,7 @@ sudo apt install -y vim git curl build-essential openssh-server python
 step "Installing node.js"
 mkdir -p ~/tools
 cd ~/tools
-NODE_VERSION=v10.15.3
+NODE_VERSION=v10.20.1
 NODE_NAME=node-$NODE_VERSION-linux-x64
 if [ ! -d ~/tools/$NODE_NAME ]; then
   curl https://nodejs.org/dist/v10.15.3/$NODE_NAME.tar.xz --output ~/tools/$NODE_NAME.tar.xz
@@ -45,7 +45,7 @@ EOT
 step "Setup dev directory"
 clone Tyriar dotfiles
 clone Tyriar xterm.js
-clone Microsoft vscode
+clone microsoft vscode
 cd ~/dev/Tyriar/xterm.js
 git remote add ups https://github.com/xtermjs/xterm.js
 git fetch ups
