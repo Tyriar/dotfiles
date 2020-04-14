@@ -69,28 +69,28 @@ if [ -r ~/.bashrc_local ]; then
 fi
 
 # Don't initialize nvm if it's already done
-if [ "$NVM_DIR" != "$HOME/.nvm" ]; then
-  if [ "$TERM_PROGRAM" = "" ]; then
-    # Always initialize if $TERM_PROGRAM is not set, this will happens for example
-    # when VS Code launches but not when run in the majority of terminals. Note
-    # that this does not set NVM_DIR so nvm will still set up aliases as needed
-    # in a terminal
-    . "$HOME".nvm/nvm.sh
-  else
-    # Defer initialization of nvm until nvm, node or a node-dependent command is
-    # run. Ensure this block is only run once if .bashrc gets sourced multiple times
-    # by checking whether __init_nvm is a function.
-    if [ -s "$HOME/.nvm/nvm.sh" ] && [ ! "$(type -t __init_nvm)" = function ]; then
-      export NVM_DIR="$HOME/.nvm"
-      [ -s "$NVM_DIR/bash_completion" ] && . "$NVM_DIR/bash_completion"
-      declare -a __node_commands=('nvm' 'node' 'npm' 'yarn' 'gulp' 'grunt' 'webpack')
-      function __init_nvm() {
-        for i in "${__node_commands[@]}"; do unalias $i; done
-        . "$NVM_DIR"/nvm.sh
-        unset __node_commands
-        unset -f __init_nvm
-      }
-      for i in "${__node_commands[@]}"; do alias $i='__init_nvm && '$i; done
-    fi
-  fi
-fi
+# if [ "$NVM_DIR" != "$HOME/.nvm" ]; then
+#   if [ "$TERM_PROGRAM" = "" ]; then
+#     # Always initialize if $TERM_PROGRAM is not set, this will happens for example
+#     # when VS Code launches but not when run in the majority of terminals. Note
+#     # that this does not set NVM_DIR so nvm will still set up aliases as needed
+#     # in a terminal
+#     . "$HOME".nvm/nvm.sh
+#   else
+#     # Defer initialization of nvm until nvm, node or a node-dependent command is
+#     # run. Ensure this block is only run once if .bashrc gets sourced multiple times
+#     # by checking whether __init_nvm is a function.
+#     if [ -s "$HOME/.nvm/nvm.sh" ] && [ ! "$(type -t __init_nvm)" = function ]; then
+#       export NVM_DIR="$HOME/.nvm"
+#       [ -s "$NVM_DIR/bash_completion" ] && . "$NVM_DIR/bash_completion"
+#       declare -a __node_commands=('nvm' 'node' 'npm' 'yarn' 'gulp' 'grunt' 'webpack')
+#       function __init_nvm() {
+#         for i in "${__node_commands[@]}"; do unalias $i; done
+#         . "$NVM_DIR"/nvm.sh
+#         unset __node_commands
+#         unset -f __init_nvm
+#       }
+#       for i in "${__node_commands[@]}"; do alias $i='__init_nvm && '$i; done
+#     fi
+#   fi
+# fi
