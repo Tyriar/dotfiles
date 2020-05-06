@@ -9,9 +9,15 @@ const moduleNames = [
 	'xterm-addon-webgl'
 ];
 
+const vscodeDir = process.argv.length >= 3 ? process.argv[2] : process.cwd();
+if (path.basename(vscodeDir) !== 'vscode') {
+  console.error('The cwd is not named "vscode"');
+  return;
+}
+
 function getLatestModuleVersion(moduleName) {
 	return new Promise((resolve, reject) => {
-		cp.exec(`npm view ${moduleName} versions --json`, (err, stdout, stderr) => {
+		cp.exec(`npm view ${moduleName} versions --json`, { cwd: vscodeDir }, (err, stdout, stderr) => {
 			if (err) {
 				reject(err);
 			}
@@ -30,13 +36,7 @@ async function update() {
 	console.log('Detected versions:');
 	console.log(moduleNames.map((m, i) => `  ${m}@${latestVersions[i]}`).join('\n'));
 
-	const vscodeDir = process.cwd();
-	if (path.basename(vscodeDir) !== 'vscode') {
-		console.error('The cwd is not named "vscode"');
-		return;
-	}
-
-	const pkg = require(path.join(__dirname, 'package.json'));
+	const pkg = require(path.join(vscodeDir, 'package.json'));
 
 	moduleNames.forEach((m, i) => {
 		const moduleWithVersion = `${m}@${latestVersions[i]}`;

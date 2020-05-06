@@ -8,3 +8,8 @@ Set-PSReadlineOption -BellStyle None
 Set-Alias c code-insiders.cmd
 
 Import-Module posh-git
+
+# Add bin to $Path
+# $vParentPath = Split-Path $PSScriptRoot -Parent
+# $vBinPath = Join-Path -Path $vParentPath -ChildPath "data\bin"
+$env:Path = "$env:Path;E:\GitHub\Tyriar\dotfiles\data\bin"
