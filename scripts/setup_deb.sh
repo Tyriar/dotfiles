@@ -23,15 +23,12 @@ if [ ! -d ~/tools/$NODE_NAME ]; then
   curl https://nodejs.org/dist/v10.15.3/$NODE_NAME.tar.xz --output ~/tools/$NODE_NAME.tar.xz
   tar xf $NODE_NAME.tar.xz
   rm $NODE_NAME.tar.xz
-fi
-
-step "Installing hub"
-sudo snap install --classic hub
 
 step "Installing yarnpkg"
 curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
 echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
 sudo apt-get update && sudo apt-get install -y yarn
+
 
 step "Setup .bashrc_local"
 rm -rf ~/.bashrc_local
