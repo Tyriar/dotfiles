@@ -35,7 +35,8 @@ alias f='find . -name'
 
 alias c='code-insiders'
 
-[ -f ~/.cargo/bin/exa ] && alias ls=exa
+[ -f ~/.cargo/bin/exa ] && alias ls='exa'
+[ -f ~/.cargo/bin/exa ] && alias tree='exa -T'
 
 # Source .bash_aliases_local if it exists for .bash_aliases commands specific to this
 # machine.
