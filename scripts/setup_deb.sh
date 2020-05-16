@@ -29,7 +29,6 @@ curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
 echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
 sudo apt-get update && sudo apt-get install -y yarn
 
-
 step "Setup .bashrc_local"
 rm -rf ~/.bashrc_local
 cat <<EOT > ~/.bashrc_local
@@ -52,5 +51,8 @@ cd ~/dev/Tyriar/dotfiles
 git pull
 npm ci
 npm start install bash git vim
+
+step "Installing rust"
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
 unset -f step
