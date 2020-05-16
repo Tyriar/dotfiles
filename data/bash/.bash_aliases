@@ -35,6 +35,8 @@ alias f='find . -name'
 
 alias c='code-insiders'
 
+[ -f ~/.cargo/bin/exa ] && alias ls=exa
+
 # Source .bash_aliases_local if it exists for .bash_aliases commands specific to this
 # machine.
 if [ -r ~/.bash_aliases_local ]; then

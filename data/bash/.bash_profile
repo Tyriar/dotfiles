@@ -28,3 +28,8 @@ fi
 if [ -d ~/.cargo ]; then
   export PATH="$HOME/.cargo/bin:$PATH"
 fi
+
+if [ -d ~/.deno ]; then
+  export DENO_INSTALL="~/.deno"
+  export PATH="$DENO_INSTALL/bin:$PATH"
+fi
