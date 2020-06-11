@@ -12,7 +12,7 @@ clone() {
 
 step "Updating apt and installing tools"
 sudo apt update
-sudo apt install -y vim git curl build-essential openssh-server python
+sudo apt install -y vim git curl build-essential openssh-server python shellcheck
 
 step "Installing node.js"
 mkdir -p ~/tools
