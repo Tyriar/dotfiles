@@ -13,3 +13,6 @@ Import-Module posh-git
 # $vParentPath = Split-Path $PSScriptRoot -Parent
 # $vBinPath = Join-Path -Path $vParentPath -ChildPath "data\bin"
 $env:Path = "$env:Path;E:\GitHub\Tyriar\dotfiles\data\bin"
+
+# Remove ad spam from npm install...
+$env:OPEN_SOURCE_CONTRIBUTOR = "true"

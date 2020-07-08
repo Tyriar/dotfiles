@@ -30,6 +30,9 @@ if [ -d ~/.cargo ]; then
 fi
 
 if [ -d ~/.deno ]; then
-  export DENO_INSTALL="~/.deno"
+  export DENO_INSTALL="$HOME/.deno"
   export PATH="$DENO_INSTALL/bin:$PATH"
 fi
+
+# Remove ad spam from npm install...
+export OPEN_SOURCE_CONTRIBUTOR="true"
