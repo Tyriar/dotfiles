@@ -5,7 +5,6 @@ const moduleNames = [
 	'xterm',
 	'xterm-addon-search',
 	'xterm-addon-unicode11',
-	'xterm-addon-web-links',
 	'xterm-addon-webgl'
 ];
 
