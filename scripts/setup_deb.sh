@@ -20,9 +20,10 @@ cd ~/tools
 NODE_VERSION=v10.20.1
 NODE_NAME=node-$NODE_VERSION-linux-x64
 if [ ! -d ~/tools/$NODE_NAME ]; then
-  curl https://nodejs.org/dist/v10.15.3/$NODE_NAME.tar.xz --output ~/tools/$NODE_NAME.tar.xz
+  curl https://nodejs.org/dist/$NODE_VERSION/$NODE_NAME.tar.xz --output ~/tools/$NODE_NAME.tar.xz
   tar xf $NODE_NAME.tar.xz
   rm $NODE_NAME.tar.xz
+fi
 
 step "Installing yarnpkg"
 curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
