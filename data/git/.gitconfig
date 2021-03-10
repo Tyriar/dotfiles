@@ -20,13 +20,14 @@
   branch = yellow black bold
 [user]
   name = Daniel Imms
+  email = 2193314+Tyriar@users.noreply.github.com
 [push]
   default = upstream
 [credential]
   helper = cache --timeout=7200
 [core]
   editor = vim
-	autocrlf = false
+  autocrlf = false
 [alias]
   authors = shortlog -s -n .
   co = checkout
@@ -38,3 +39,7 @@
   upo = branch -u origin/master
 [hub]
   protocol = https
+[gpg]
+  program = gpg
+[commit]
+  gpgsign = true
