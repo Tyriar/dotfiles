@@ -36,3 +36,6 @@ fi
 
 # Remove ad spam from npm install...
 export OPEN_SOURCE_CONTRIBUTOR="true"
+
+# Remove macOS zsh default warning
+export BASH_SILENCE_DEPRECATION_WARNING=1
