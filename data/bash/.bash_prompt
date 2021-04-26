@@ -13,7 +13,11 @@ function __prompt_command() {
   else
     PS1+="\[\033[1;31m\]";
   fi
-  PS1+="❯ \[\033[0m\]";
+  if [ $TERM_PROGRAM = "vscode" ]; then
+    PS1+="❯ \[\033[0m\]";
+  else
+    PS1+="> \[\033[0m\]";
+  fi
   PS2="… ";
 }
 
