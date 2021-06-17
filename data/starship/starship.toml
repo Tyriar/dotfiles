@@ -23,3 +23,6 @@ min_time = 500
 [directory]
 truncation_length = 2
 truncate_to_repo = false
+
+[nodejs]
+symbol = "node "
