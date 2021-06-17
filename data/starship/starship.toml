@@ -1,0 +1,25 @@
+format = """
+$username\
+$hostname\
+$shlvl\
+$directory\
+$git_branch\
+$git_commit\
+$git_state\
+$git_status\
+$nodejs\
+$memory_usage\
+$custom\
+$cmd_duration\
+$line_break\
+$time\
+$status\
+$shell\
+$character"""
+
+[cmd_duration]
+min_time = 500
+
+[directory]
+truncation_length = 2
+truncate_to_repo = false
