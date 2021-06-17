@@ -6,6 +6,7 @@ const allModules = [
   'git',
   'gnome-terminal',
   'pwsh',
+  'starship',
   'vim'
 ];
 
