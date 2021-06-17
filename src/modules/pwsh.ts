@@ -7,7 +7,7 @@ export function install(): void {
   if (process.platform === 'win32') {
     logHelper.logStepStarted('pwsh');
     const sourceDir = path.join(__dirname, '../../data/pwsh');
-    const destDir = path.join(process.env.HOME!, 'Documents/PowerShell');
+    const destDir = path.join(process.env.USERPROFILE || process.env.HOME!, 'Documents/PowerShell');
     const files = fs.readdirSync(sourceDir);
     logHelper.logSubStepPartialStarted('applying config files');
     symlinkOrReplaceFilesInFolderSync(files, sourceDir, destDir);
