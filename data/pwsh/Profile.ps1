@@ -16,3 +16,5 @@ $env:Path = "$env:Path;E:\GitHub\Tyriar\dotfiles\data\bin"
 
 # Remove ad spam from npm install...
 $env:OPEN_SOURCE_CONTRIBUTOR = "true"
+
+Invoke-Expression (&starship init powershell)
