@@ -7,7 +7,6 @@ $git_branch\
 $git_commit\
 $git_state\
 $git_status\
-$nodejs\
 $memory_usage\
 $custom\
 $cmd_duration\
@@ -21,8 +20,12 @@ $character"""
 min_time = 500
 
 [directory]
+style = "bold blue"
 truncation_length = 2
 truncate_to_repo = false
 
 [nodejs]
 symbol = "node "
+
+[git_branch]
+style = "bold yellow"
