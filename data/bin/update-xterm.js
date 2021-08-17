@@ -8,6 +8,10 @@ const moduleNames = [
 	'xterm-addon-webgl'
 ];
 
+const backendOnlyModuleNames = [
+  'xterm-headless'
+];
+
 const vscodeDir = process.argv.length >= 3 ? process.argv[2] : process.cwd();
 if (path.basename(vscodeDir) !== 'vscode') {
   console.error('The cwd is not named "vscode"');
@@ -44,6 +48,18 @@ async function update() {
 			return;
 		}
 		[vscodeDir, path.join(vscodeDir, 'remote'), path.join(vscodeDir, 'remote/web')].forEach(cwd => {
+			console.log(`${cwd}/package.json: Updating ${moduleWithVersion}`);
+			cp.execSync(`yarn add ${moduleWithVersion}`, { cwd });
+		});
+	});
+
+  backendOnlyModuleNames.forEach((m, i) => {
+		const moduleWithVersion = `${m}@${latestVersions[i]}`;
+		if (pkg.dependencies[m] === latestVersions[i]) {
+			console.log(`Skipping ${moduleWithVersion}, already up to date`);
+			return;
+		}
+		[vscodeDir, path.join(vscodeDir, 'remote')].forEach(cwd => {
 			console.log(`${cwd}/package.json: Updating ${moduleWithVersion}`);
 			cp.execSync(`yarn add ${moduleWithVersion}`, { cwd });
 		});
