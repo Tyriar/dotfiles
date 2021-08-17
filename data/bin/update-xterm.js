@@ -57,7 +57,7 @@ async function update() {
       return;
     }
     [vscodeDir, path.join(vscodeDir, 'remote'), path.join(vscodeDir, 'remote/web')].forEach(cwd => {
-      console.log(`${cwd}/package.json: Updating ${moduleWithVersion}`);
+      console.log(`${path.join(cwd, 'package.json')}: Updating ${moduleWithVersion}`);
       cp.execSync(`yarn add ${moduleWithVersion}`, { cwd });
     });
   }
