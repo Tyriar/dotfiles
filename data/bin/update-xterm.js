@@ -54,24 +54,24 @@ async function update() {
     const moduleWithVersion = `${m}@${latestVersions[m]}`;
     if (pkg.dependencies[m] === latestVersions[m]) {
       console.log(`Skipping ${moduleWithVersion}, already up to date`);
-      return;
+      continue;
     }
-    [vscodeDir, path.join(vscodeDir, 'remote'), path.join(vscodeDir, 'remote/web')].forEach(cwd => {
+    for (const cwd of [vscodeDir, path.join(vscodeDir, 'remote'), path.join(vscodeDir, 'remote/web')]) {
       console.log(`${path.join(cwd, 'package.json')}: Updating ${moduleWithVersion}`);
       cp.execSync(`yarn add ${moduleWithVersion}`, { cwd });
-    });
+    }
   }
 
   for (const m of backendOnlyModuleNames) {
     const moduleWithVersion = `${m}@${latestVersions[m]}`;
     if (pkg.dependencies[m] === latestVersions[m]) {
       console.log(`Skipping ${moduleWithVersion}, already up to date`);
-      return;
+      continue;
     }
-    [vscodeDir, path.join(vscodeDir, 'remote')].forEach(cwd => {
-      console.log(`${cwd}/package.json: Updating ${moduleWithVersion}`);
+    for (const cwd of [vscodeDir, path.join(vscodeDir, 'remote')]) {
+      console.log(`${path.join(cwd, 'package.json')}: Updating ${moduleWithVersion}`);
       cp.execSync(`yarn add ${moduleWithVersion}`, { cwd });
-    });
+    }
   }
 }
 
