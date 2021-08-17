@@ -32,18 +32,20 @@ function getLatestModuleVersion(moduleName) {
 
 async function update() {
 	console.log('Fetching latest versions');
-	const versionPromises = [];
-	moduleNames.forEach(m => versionPromises.push(getLatestModuleVersion(m)));
+	const versionPromises = {};
+	moduleNames.concat(backendOnlyModuleNames).forEach(m => versionPromises[m] = getLatestModuleVersion(m));
 	const latestVersions = await Promise.all(versionPromises);
 
 	console.log('Detected versions:');
-	console.log(moduleNames.map((m, i) => `  ${m}@${latestVersions[i]}`).join('\n'));
+  for (const m of moduleNames.concat(backendOnlyModuleNames)) {
+	  console.log(`  ${m}@${latestVersions[m]}`);
+  }
 
 	const pkg = require(path.join(vscodeDir, 'package.json'));
 
-	moduleNames.forEach((m, i) => {
-		const moduleWithVersion = `${m}@${latestVersions[i]}`;
-		if (pkg.dependencies[m] === latestVersions[i]) {
+  for (const m of moduleNames) {
+		const moduleWithVersion = `${m}@${latestVersions[m]}`;
+		if (pkg.dependencies[m] === latestVersions[m]) {
 			console.log(`Skipping ${moduleWithVersion}, already up to date`);
 			return;
 		}
@@ -51,11 +53,11 @@ async function update() {
 			console.log(`${cwd}/package.json: Updating ${moduleWithVersion}`);
 			cp.execSync(`yarn add ${moduleWithVersion}`, { cwd });
 		});
-	});
+	}
 
-  backendOnlyModuleNames.forEach((m, i) => {
-		const moduleWithVersion = `${m}@${latestVersions[i]}`;
-		if (pkg.dependencies[m] === latestVersions[i]) {
+  for (const m of backendOnlyModuleNames) {
+		const moduleWithVersion = `${m}@${latestVersions[m]}`;
+		if (pkg.dependencies[m] === latestVersions[m]) {
 			console.log(`Skipping ${moduleWithVersion}, already up to date`);
 			return;
 		}
@@ -63,7 +65,7 @@ async function update() {
 			console.log(`${cwd}/package.json: Updating ${moduleWithVersion}`);
 			cp.execSync(`yarn add ${moduleWithVersion}`, { cwd });
 		});
-	});
+	}
 }
 
 update();
