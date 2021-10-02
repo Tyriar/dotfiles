@@ -8,9 +8,10 @@ Set-PSReadlineOption -BellStyle None
 Set-Alias c code-insiders.cmd
 
 # Add bin to $Path
-# $vParentPath = Split-Path $PSScriptRoot -Parent
-# $vBinPath = Join-Path -Path $vParentPath -ChildPath "data\bin"
-$env:Path = "$env:Path;E:\GitHub\Tyriar\dotfiles\data\bin"
+$vResolvedPath = (Get-ChildItem -Path "$([Environment]::GetFolderPath("MyDocuments"))\PowerShell\Profile.ps1").Target
+$vParentPath = Split-Path (Get-ChildItem $vResolvedPath).DirectoryName -Parent
+$vBinPath = Join-Path -Path $vParentPath -ChildPath "bin"
+$env:Path = "$env:Path;$vBinPath"
 
 # Remove ad spam from npm install...
 $env:OPEN_SOURCE_CONTRIBUTOR = "true"
