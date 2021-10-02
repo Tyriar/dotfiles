@@ -9,7 +9,8 @@ const moduleNames = [
 ];
 
 const backendOnlyModuleNames = [
-  'xterm-headless'
+  'xterm-headless',
+  'xterm-addon-serialize'
 ];
 
 const vscodeDir = process.argv.length >= 3 ? process.argv[2] : process.cwd();
