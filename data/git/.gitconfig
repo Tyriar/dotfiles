@@ -37,9 +37,12 @@
   st = status
   up = branch -u
   upo = branch -u origin/master
+  b = branch
+  p = pull
+  s = status
 [hub]
   protocol = https
-[gpg]
-  program = gpg
-[commit]
-  gpgsign = true
+# [gpg]
+#   program = gpg
+# [commit]
+#   gpgsign = true
