@@ -6,14 +6,14 @@ function __prompt_command() {
   local LAST_EXIT=$?
   PS1="\n";
   PS1+="\[\033[01;34m\]\w\[\033[00m\]";
-  PS1+="\$(__git_prompt)\033[0m";
+  //PS1+="\$(__git_prompt)\033[0m";
   PS1+="\n";
   if [ $LAST_EXIT -eq 0 ]; then
     PS1+="\[\033[1;32m\]";
   else
     PS1+="\[\033[1;31m\]";
   fi
-  if [ $TERM_PROGRAM = "vscode" ]; then
+  if [ "$TERM_PROGRAM" = "vscode" ]; then
     PS1+="❯ \[\033[0m\]";
   else
     PS1+="> \[\033[0m\]";
