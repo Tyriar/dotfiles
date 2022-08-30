@@ -1,32 +1,18 @@
 format = """
-$username\
-$hostname\
-$shlvl\
-$directory\
-$git_branch\
-$git_commit\
-$git_state\
-$git_status\
-$memory_usage\
-$custom\
-$cmd_duration\
-$line_break\
-$time\
-$status\
-$shell\
-$character"""
+[\uE0B6](fg:red)[$directory](bg:red)[\uE0B0](fg:red bg:yellow)$git_branch[\uE0B0](fg:yellow bg:blue)$git_status[\uE0B0](blue bg:#non) $all$character"""
 
-[cmd_duration]
-min_time = 500
+add_newline = true
 
 [directory]
-style = "bold blue"
-truncation_length = 2
-truncate_to_repo = false
-
-[nodejs]
-symbol = "node "
+style = "bg:red fg:#111111"
 
 [git_branch]
-style = "bold yellow"
-format = "[$symbol$branch]($style) "
+format = "[ $symbol$branch ]($style)"
+style = "bg:yellow fg:#111111"
+
+[git_status]
+format = "[ $all_status$ahead_behind ]($style)"
+style = "bg:blue fg:#111111"
+
+[package]
+symbol = " "
