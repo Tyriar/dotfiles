@@ -5,6 +5,8 @@ add_newline = true
 
 [directory]
 style = "bg:red fg:#111111"
+read_only = ""
+read_only_style = "bg:red fg:#111111"
 
 [git_branch]
 format = "[ $symbol$branch ]($style)"
