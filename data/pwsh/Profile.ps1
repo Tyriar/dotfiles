@@ -21,3 +21,8 @@ $env:OPEN_SOURCE_CONTRIBUTOR = "true"
 
 # Prompt starship
 Invoke-Expression (&starship init powershell)
+
+# fnm - node version manager
+if (Get-Command "fnm.exe" -ErrorAction SilentlyContinue) { 
+    fnm env --use-on-cd | Out-String | Invoke-Expression
+}
