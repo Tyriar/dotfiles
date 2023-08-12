@@ -26,3 +26,6 @@ Invoke-Expression (&starship init powershell)
 if (Get-Command "fnm.exe" -ErrorAction SilentlyContinue) { 
     fnm env --use-on-cd | Out-String | Invoke-Expression
 }
+
+# Alias to print whole environment
+function env { Get-ChildItem Env: | Sort Name }
