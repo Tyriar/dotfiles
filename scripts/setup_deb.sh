@@ -17,7 +17,7 @@ sudo apt install -y vim git curl build-essential openssh-server python shellchec
 step "Installing node.js"
 mkdir -p ~/tools
 cd ~/tools
-NODE_VERSION=v14.15.4
+NODE_VERSION=v22.21.1
 NODE_NAME=node-$NODE_VERSION-linux-x64
 if [ ! -d ~/tools/$NODE_NAME ]; then
   curl https://nodejs.org/dist/$NODE_VERSION/$NODE_NAME.tar.xz --output ~/tools/$NODE_NAME.tar.xz
@@ -25,10 +25,10 @@ if [ ! -d ~/tools/$NODE_NAME ]; then
   rm $NODE_NAME.tar.xz
 fi
 
-step "Installing yarnpkg"
-curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
-echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
-sudo apt-get update && sudo apt-get install -y yarn
+#step "Installing yarnpkg"
+#curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
+#echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
+#sudo apt-get update && sudo apt-get install -y yarn
 
 step "Setup .bashrc_local"
 rm -rf ~/.bashrc_local
